@@ -179,9 +179,9 @@ $(document).ready(function () {
               <ul class="slides">
                 <!-- <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider" /></a></li> -->
                 <li><a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/logo/photo2.jpg" alt="slider" /></a></li>
-                <li><a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/logo/photo1.jpg" alt="slider" /></a></li>
-                <li><a href="gallery-single.htm"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVentureCafeRotterdam%2Fvideos%2F1980844968833706%2F&show_text=0&width=354" width="770" height="354" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></a></li>
-                <li><a href="gallery-single.htm"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCapitalTourXXL%2Fvideos%2F1681182212181668%2F&show_text=0&width=560" width="770" height="433.766" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></a></li>
+                <li><a href="gallery-single.htm"><img stye="height=433px;width=720px;" src="<?php echo base_url(); ?>assets/logo/photo1.jpg" alt="slider" /></a></li>
+                <li><a href="gallery-single.htm"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVentureCafeRotterdam%2Fvideos%2F1980844968833706%2F&show_text=0&height=800" width="770px" height="433,766px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></a></li>
+                <li><a href="gallery-single.htm"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCapitalTourXXL%2Fvideos%2F1681182212181668%2F&show_text=0&width=720&height=500" width="770px" height="530px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></a></li>
                 </a></li>
               </ul>
             </div>
