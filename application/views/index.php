@@ -30,10 +30,10 @@
 <!-- JS
 ================================================== -->
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/jquery.custom.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.prettyPhoto.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.flexslider.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.custom.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
 
