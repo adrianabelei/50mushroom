@@ -80,7 +80,7 @@ $(document).ready(function () {
         <!-- Logo
         ================================================== -->
         <div class="span5 logo">
-        	<a href="index.htm"><img src="logo/venture_logo.png" alt="Venture cafe logo" width="280px"/></a>
+        	<a href="index.htm"><img src="<?php echo base_url(); ?>assets/logo/venture_logo.png" alt="Venture cafe logo" width="280px"/></a>
             <h5>Big Things... Small Packages</h5>
         </div>
         
@@ -178,8 +178,8 @@ $(document).ready(function () {
             <div class="flexslider">
               <ul class="slides">
                 <!-- <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider" /></a></li> -->
-                <li><a href="gallery-single.htm"><img src="logo/photo2.jpg" alt="slider" /></a></li>
-                <li><a href="gallery-single.htm"><img src="logo/photo1.jpg" alt="slider" /></a></li>
+                <li><a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/logo/photo2.jpg" alt="slider" /></a></li>
+                <li><a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/logo/photo1.jpg" alt="slider" /></a></li>
                 <li><a href="gallery-single.htm"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVentureCafeRotterdam%2Fvideos%2F1980844968833706%2F&show_text=0&width=354" width="770" height="354" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></a></li>
                 <li><a href="gallery-single.htm"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCapitalTourXXL%2Fvideos%2F1681182212181668%2F&show_text=0&width=560" width="770" height="433.766" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></a></li>
                 </a></li>
@@ -218,11 +218,11 @@ $(document).ready(function () {
                     <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international ad campaign.</span>
                     </li>
 
@@ -230,11 +230,11 @@ $(document).ready(function () {
                     <li class="span3 gallery-item" data-id="id-2" data-type="illustration">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">3 Color Poster Design</a>For a regional festival event.</span>
                     </li>
 
@@ -246,7 +246,7 @@ $(document).ready(function () {
                                 <a href="#" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Ink Pen Illustration</a>Created for a best selling children's book.</span>
                     </li>
 
@@ -254,11 +254,11 @@ $(document).ready(function () {
                     <li class="span3 gallery-item" data-id="id-4" data-type="video">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international add campaign.</span>
                     </li>
 
@@ -266,11 +266,11 @@ $(document).ready(function () {
                     <li class="span3 gallery-item" data-id="id-5" data-type="web illustration">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Icon Design</a>Classic retro style illustration.</span>
                     </li>
 
@@ -278,11 +278,11 @@ $(document).ready(function () {
                     <li class="span3 gallery-item" data-id="id-6" data-type="illustration design">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Animation Cell</a>Creative storyboard illustration</span>
                     </li>
 
@@ -290,11 +290,11 @@ $(document).ready(function () {
                     <li class="span3 gallery-item" data-id="id-7" data-type="design">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Poster Ad Campaign</a>Regional ad for a local company.</span>
                     </li>
 
@@ -302,11 +302,11 @@ $(document).ready(function () {
                     <li class="span3 gallery-item" data-id="id-8" data-type="web video">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Magazine Ad</a>For an international add campaign.</span>
                     </li>
 
@@ -314,11 +314,11 @@ $(document).ready(function () {
                     <li class="span3 gallery-item" data-id="id-9" data-type="design">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Character Designs</a>For a feature film.</span>
                     </li>
 
@@ -326,11 +326,11 @@ $(document).ready(function () {
                     <li class="span3 gallery-item" data-id="id-10" data-type="web design">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Poster and Ad Design</a>For an international add campaign.</span>
                     </li>
 
@@ -338,11 +338,11 @@ $(document).ready(function () {
                     <li class="span3 gallery-item" data-id="id-11" data-type="illustration">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Website and Animation</a>For a local business.</span>
                     </li>
 
@@ -350,11 +350,11 @@ $(document).ready(function () {
                     <li class="span3 gallery-item" data-id="id-12" data-type="illustration video">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm">Branding Design</a>For an international add campaign.</span>
                     </li>
                 </ul>
@@ -382,7 +382,7 @@ $(document).ready(function () {
 
                  <!-- Blog Item 1 -->
                 <div class="active item">
-                    <a href="blog-single.htm"><img src="img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
+                    <a href="blog-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
                     <div class="post-info clearfix">
                         <h4><a href="blog-single.htm">A subject that is beautiful in itself</a></h4>
                         <ul class="blog-details-preview">
@@ -397,7 +397,7 @@ $(document).ready(function () {
 
                 <!-- Blog Item 2 -->
                  <div class="item">
-                    <a href="blog-single.htm"><img src="img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
+                    <a href="blog-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
                     <div class="post-info clearfix">
                         <h4><a href="blog-single.htm">A great artist is always before his time</a></h4>
                         <ul class="blog-details-preview">
@@ -412,7 +412,7 @@ $(document).ready(function () {
 
                  <!-- Blog Item 3 -->
                  <div class="item">
-                    <a href="blog-single.htm"><img src="img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
+                    <a href="blog-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
                     <div class="post-info clearfix">
                         <h4><a href="blog-single.htm">Is art everything to anybody?</a></h4>
                         <ul class="blog-details-preview">
@@ -461,11 +461,11 @@ $(document).ready(function () {
 
             <!-- Client Logo Thumbs-->
             <ul class="client-logos">
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-1.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-2.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-3.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-4.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="img/gallery/client-img-5.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="<?php echo base_url(); ?>assets/img/gallery/client-img-1.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="<?php echo base_url(); ?>assets/img/gallery/client-img-2.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="<?php echo base_url(); ?>assets/img/gallery/client-img-3.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="<?php echo base_url(); ?>assets/img/gallery/client-img-4.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="<?php echo base_url(); ?>assets/img/gallery/client-img-5.png" alt="Client"></a></li>
             </ul>
 
         </div>
@@ -510,18 +510,18 @@ $(document).ready(function () {
                 <div class="span3 footer-col">
                     <h5>Flickr Photos</h5>
                     <ul class="img-feed">
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
                     </ul>
                 </div>
             </div>
