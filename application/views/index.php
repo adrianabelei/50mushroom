@@ -482,7 +482,7 @@ $(document).ready(function () {
         	<div class="row footer-row">
                 <div class="span3 footer-col">
                     <h5>About Us</h5>
-                   <img src="logo/VentureCafeLogoWhite@2.png" alt="Venture" width="200"/><br /><br />
+                   <img src="<?php echo base_url(); ?>assets/logo/VentureCafeLogoWhite@2.png" alt="Venture" width="200"/><br /><br />
                     <address>
                         <strong>50-Muchroom</strong><br />
                         Restart One Network<br />
