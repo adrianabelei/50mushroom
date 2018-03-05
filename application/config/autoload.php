@@ -1,5 +1,7 @@
 <?php
-defined('BASEPATH') or exit('No direct script access allowed');
+
+defined('BASEPATH') OR exit('No direct script access allowed');
+
 
 /*
 | -------------------------------------------------------------------
@@ -28,7 +30,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | 6. Language files
 | 7. Models
 |
- */
+
+*/
+
 
 /*
 | -------------------------------------------------------------------
@@ -38,7 +42,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 |  $autoload['packages'] = array(APPPATH.'third_party', '/usr/local/shared');
 |
- */
+<<<<<<< HEAD
+*/
+
 $autoload['packages'] = array();
 
 /*
@@ -58,9 +64,11 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 <<<<<<< HEAD
- */
+*/
+
 
 $autoload['libraries'] = array('database', 'form_validation', 'session');
+
 
 /*
 | -------------------------------------------------------------------
@@ -80,7 +88,10 @@ $autoload['libraries'] = array('database', 'form_validation', 'session');
 |
 |	$autoload['drivers'] = array('cache' => 'cch');
 |
- */
+<<<<<<< HEAD
+*/
+
+
 $autoload['drivers'] = array();
 
 /*
@@ -90,7 +101,8 @@ $autoload['drivers'] = array();
 | Prototype:
 |
 |	$autoload['helper'] = array('url', 'file');
-
+<<<<<<< HEAD
+*/
 $autoload['helper'] = array('url');
 
 /*
@@ -104,7 +116,10 @@ $autoload['helper'] = array('url');
 | NOTE: This item is intended for use ONLY if you have created custom
 | config files.  Otherwise, leave it blank.
 |
- */
+<<<<<<< HEAD
+*/
+
+
 $autoload['config'] = array();
 
 /*
@@ -118,7 +133,9 @@ $autoload['config'] = array();
 | NOTE: Do not include the "_lang" part of your file.  For example
 | "codeigniter_lang.php" would be referenced as array('codeigniter');
 |
- */
+<<<<<<< HEAD
+*/
+
 $autoload['language'] = array();
 
 /*
@@ -133,5 +150,8 @@ $autoload['language'] = array();
 | in the controller:
 |
 |	$autoload['model'] = array('first_model' => 'first');
- */
+<<<<<<< HEAD
+*/
+
 $autoload['model'] = array('companymodel');
+

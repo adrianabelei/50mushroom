@@ -98,7 +98,9 @@ $(document).ready(function () {
                     <li><a href="index-slider.htm">Slider Only</a></li>
                 </ul>
             </li>
-           <li><a href="features.htm">Features</a></li>
+
+           <li><a href="login_register">Login/Register</a></li>
+
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="page-full-width.htm">Pages <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -109,9 +111,11 @@ $(document).ready(function () {
                 </ul>
             </li>
              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="">Gallery <b class="caret"></b></a>
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="gallery-4col.htm">Gallery <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="show">Gallery 3 Column</a></li>
+                    <li><a href="gallery-3col.htm">Gallery 3 Column</a></li>
+
                     <li><a href="gallery-4col.htm">Gallery 4 Column</a></li>
                     <li><a href="gallery-6col.htm">Gallery 6 Column</a></li>
                     <li><a href="gallery-4col-circle.htm">Gallery 4 Round</a></li>
@@ -178,9 +182,11 @@ $(document).ready(function () {
             <div class="flexslider">
               <ul class="slides">
                 <!-- <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider" /></a></li> -->
-                <li><a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/logo/photo2.jpg" alt="slider" /></a></li>
-                <li><a href="gallery-single.htm"><img stye="height=433px;width=720px;" src="<?php echo base_url(); ?>assets/logo/photo1.jpg" alt="slider" /></a></li>
-                <li><a href="gallery-single.htm"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVentureCafeRotterdam%2Fvideos%2F1980844968833706%2F&show_text=0&height=800" width="770px" height="433,766px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></a></li>
+
+                <li><a href="gallery-single.htm"><img style="width:770px; height:530px;"src="<?php echo base_url(); ?>assets/logo/photo2.jpg" alt="slider" /></a></li>
+                <li><a href="gallery-single.htm"><img style="width:770px; height:530px;" src="<?php echo base_url(); ?>assets/logo/photo1.jpg" alt="slider" /></a></li>
+                <li><a href="gallery-single.htm"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FVentureCafeRotterdam%2Fvideos%2F1980844968833706%2F&show_text=0&width=720&height=500" width="770px" height="530px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></a></li>
+
                 <li><a href="gallery-single.htm"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCapitalTourXXL%2Fvideos%2F1681182212181668%2F&show_text=0&width=720&height=500" width="770px" height="530px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></a></li>
                 </a></li>
               </ul>
