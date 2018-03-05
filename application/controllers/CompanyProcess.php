@@ -80,6 +80,7 @@ class CompanyProcess extends CI_Controller
     }
 
     public function readpost()
+
     {
         $this->load->model('company_Model');
         $result=$this->company_Model->postsread();
@@ -95,8 +96,6 @@ class CompanyProcess extends CI_Controller
 
 
  
-
-
     
 }
 
