@@ -18,7 +18,8 @@ class Companyprocess extends CI_Controller
     public function readpost()
 {
     $this->load->model('companyModel');
-    $result=$this->companyModel->postsread();
+    $result['results']=$this->companyModel->postsread();
+    $this->load->view("index",$result);
     var_dump($result);
 } 
 
