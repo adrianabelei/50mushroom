@@ -111,7 +111,7 @@ $(document).ready(function () {
              <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="">Gallery <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="gallery-3col.htm">Gallery 3 Column</a></li>
+                    <li><a href="show">Gallery 3 Column</a></li>
                     <li><a href="gallery-4col.htm">Gallery 4 Column</a></li>
                     <li><a href="gallery-6col.htm">Gallery 6 Column</a></li>
                     <li><a href="gallery-4col-circle.htm">Gallery 4 Round</a></li>

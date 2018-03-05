@@ -1,8 +1,8 @@
 <?php 
 
-class AdminProcess extends CI_COntroller 
+class Adminprocess extends CI_COntroller 
 {
-    
+   
 }
 
 
