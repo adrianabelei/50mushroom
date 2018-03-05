@@ -1,6 +1,6 @@
 <?php 
 
-class Process extends CI_Controller 
+class CompanyProcess extends CI_Controller 
 {
     public function __construct()
     {
