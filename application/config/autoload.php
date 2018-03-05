@@ -152,6 +152,10 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 <<<<<<< HEAD
 */
+<<<<<<< HEAD
+$autoload['model'] = array('companymodel');
+=======
 
 $autoload['model'] = array('companymodel');
 
+>>>>>>> e8ae4bd0fe18947c572ba89054d5c83c2e3e746b

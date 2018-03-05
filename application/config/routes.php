@@ -54,8 +54,11 @@ $route['default_controller'] = 'CompanyProcess/index';
 $route['login_register'] = 'CompanyProcess/joinpage';
 $route['register'] = 'CompanyProcess/register';
 $route['companytwq']='Companyprocess/company';
+<<<<<<< HEAD
+=======
 $route['managepost']='Companyprocess/managepost';
 
+>>>>>>> e8ae4bd0fe18947c572ba89054d5c83c2e3e746b
 $route['login'] = 'CompanyProcess/login';
 $route['show'] = 'Companyprocess/readpost';
 $route['adminwsq'] = 'Companyprocess/admin';

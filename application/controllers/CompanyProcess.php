@@ -1,5 +1,8 @@
 <?php 
+<<<<<<< HEAD
+=======
 
+>>>>>>> e8ae4bd0fe18947c572ba89054d5c83c2e3e746b
 defined('BASEPATH') OR exit('No direct script access allowed');
 class CompanyProcess extends CI_Controller 
 
@@ -16,6 +19,19 @@ class CompanyProcess extends CI_Controller
         $this->load->model('companyModel');
         $result['results']=$this->companyModel->postsread();
         $this->load->view("index",$result);
+<<<<<<< HEAD
+        
+        
+    }
+    //////// Login/Register Page /////////////
+    public function joinpage()
+    {
+    $this->load->view('joinpage');
+    }
+    public function admin(){
+        $this->load->view("adminpanel/adminlogin");
+    }
+=======
         var_dump($result);
         
 
@@ -35,6 +51,7 @@ class CompanyProcess extends CI_Controller
     }
 
 
+>>>>>>> e8ae4bd0fe18947c572ba89054d5c83c2e3e746b
     ///////////// Registeration///////////////
     public function register()
     {
@@ -50,6 +67,58 @@ class CompanyProcess extends CI_Controller
         $validationError = validation_errors();
         $this->load->view('joinpage', array('errors' => $validationError));
         }
+<<<<<<< HEAD
+    
+        else 
+        {
+        $this->load->model('company_model');
+        $this->company_model->insertCompany($regInfo);
+        $message='You are successfully registirated, Please Login';
+        $this->load->view('joinpage', array('errors' => $message));
+        }
+    }
+ 
+    ////////////// Login /////////////////
+    public function login()
+	{
+		$logInfo=$this->input->post(null,true);
+		$this->load->model('company_model');
+        $query=$this->company_model->loginChecker($logInfo);
+        // $articles =$this->main_model->takeArticle();
+		if($query)
+		{
+        $array_items = array(
+            'id' => $query['id'],
+            'company_name' => $query['company_name']);
+            
+        // $this->session->set_userdata($array_items);
+        // $this->session->set_userdata('id',$query['id']);
+        // $this->session->set_userdata('company_name',$query['company_name']);
+        $this->load->view('adminpanel/indexcompany');
+        // ,array('article' => $articles )
+          
+		
+		}
+		else
+		{
+			$errlog='Please insert VALID email address OR password!';
+			$this->load->view('joinpage', array('errlog' => $errlog));
+		}
+    }
+    public function readpost()
+    {
+        $this->load->model('company_Model');
+        $result=$this->company_Model->postsread();
+        
+    } 
+    ///////////////// END OF THE CLASS////////////////////////
+public function company()
+{
+    $this->load->view("adminpanel/indexcompany");
+}
+ 
+=======
+>>>>>>> e8ae4bd0fe18947c572ba89054d5c83c2e3e746b
     
         else 
         {
@@ -112,6 +181,8 @@ public function managepost()
 {
     $this->load->view("adminpanel/manageposts");
 }
+<<<<<<< HEAD
+=======
 
  
     
@@ -120,4 +191,5 @@ public function managepost()
 
 
 
+>>>>>>> e8ae4bd0fe18947c572ba89054d5c83c2e3e746b
 ?>

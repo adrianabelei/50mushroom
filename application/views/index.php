@@ -36,14 +36,12 @@
 <script src="<?php echo base_url(); ?>assets/js/jquery.custom.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
-
     $("#btn-blog-next").click(function () {
       $('#blogCarousel').carousel('next')
     });
      $("#btn-blog-prev").click(function () {
       $('#blogCarousel').carousel('prev')
     });
-
      $("#btn-client-next").click(function () {
       $('#clientCarousel').carousel('next')
     });
@@ -52,9 +50,7 @@ $(document).ready(function () {
     });
     
 });
-
  $(window).load(function(){
-
     $('.flexslider').flexslider({
         animation: "slide",
         slideshow: true,
@@ -63,7 +59,6 @@ $(document).ready(function () {
         }
     });  
 });
-
 </script>
 
 </head>
@@ -221,9 +216,13 @@ $(document).ready(function () {
             <ul class="gallery-post-grid holder">
 
                  <?php 
+<<<<<<< HEAD
+        foreach ($results as $item ) {
+=======
 
         foreach ($results as $item ) {
 
+>>>>>>> e8ae4bd0fe18947c572ba89054d5c83c2e3e746b
         ?>
         
                     <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
