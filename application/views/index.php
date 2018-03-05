@@ -219,6 +219,7 @@ $(document).ready(function () {
         foreach ($results as $item ) {
 
         ?>
+        
                     <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">

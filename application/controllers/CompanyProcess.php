@@ -10,8 +10,15 @@ class Companyprocess extends CI_Controller
     
     public function index()
     {
-        $this->load->view('index');
+        $this->load->model('companyModel');
+        $result['results']=$this->companyModel->postsread();
+        $this->load->view("index",$result);
         
+    }
+    public function admin(){
+
+        $this->load->view("adminpanel/adminlogin");
+
     }
 
 
