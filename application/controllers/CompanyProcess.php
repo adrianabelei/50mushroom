@@ -16,6 +16,7 @@ class CompanyProcess extends CI_Controller
         $this->load->model('companyModel');
         $result['results']=$this->companyModel->postsread();
         $this->load->view("index",$result);
+        var_dump($result);
         
 
     }
@@ -102,7 +103,10 @@ class CompanyProcess extends CI_Controller
 
     ///////////////// END OF THE CLASS////////////////////////
 
-
+public function company()
+{
+    $this->load->view("adminpanel/indexcompany");
+}
 
  
     
