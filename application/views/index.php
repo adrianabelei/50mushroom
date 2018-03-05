@@ -216,13 +216,9 @@ $(document).ready(function () {
             <ul class="gallery-post-grid holder">
 
                  <?php 
-<<<<<<< HEAD
-        foreach ($results as $item ) {
-=======
 
         foreach ($results as $item ) {
 
->>>>>>> e8ae4bd0fe18947c572ba89054d5c83c2e3e746b
         ?>
         
                     <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
