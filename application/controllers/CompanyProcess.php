@@ -108,6 +108,11 @@ public function company()
     $this->load->view("adminpanel/indexcompany");
 }
 
+public function managepost()
+{
+    $this->load->view("adminpanel/manageposts");
+}
+
  
     
 }

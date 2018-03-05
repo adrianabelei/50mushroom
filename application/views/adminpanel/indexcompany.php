@@ -93,7 +93,7 @@
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                             <div class="div-square">
-                                <a href="manageposts.php" >
+                                <a href="managepost" >
                                     <i class="fa fa-lightbulb-o fa-5x"></i>
                                     <h4>Manage posts</h4>
                                 </a>
@@ -109,11 +109,11 @@
                             <!-- /. WRAPPER  -->
                             <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
                             <!-- JQUERY SCRIPTS -->
-                            <script src="assets/js/jquery-1.10.2.js"></script>
+                            <script src="<?php echo base_url(); ?>assets/adminpanel/js/jquery-1.10.2.js"></script>
                             <!-- BOOTSTRAP SCRIPTS -->
-                            <script src="assets/js/bootstrap.min.js"></script>
+                            <script src="<?php echo base_url(); ?>assets/adminpanel/js/bootstrap.min.js"></script>
                             <!-- CUSTOM SCRIPTS -->
-                            <script src="assets/js/custom.js"></script>
+                            <script src="<?php echo base_url(); ?>assets/adminpanel/js/custom.js"></script>
 
 
                             </body>
