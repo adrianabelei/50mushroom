@@ -1,0 +1,84 @@
+
+
+body {
+  background: url(http://res.cloudinary.com/dwtoixcjm/image/upload/e_grayscale/v1520158712/Vencaf_15_06_inside_promo_ztrbqc.jpg);
+  text-align:center;
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+}
+
+#logbox1, #logbox2 {
+  display:inline-block;
+  padding: 10px;
+  margin: 150px auto;
+  width: 340px;
+  background-color: #e06a26;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+#logbox1 {
+  margin-left:50px;
+  margin-top: 250px;
+
+}
+
+
+#logbox2 {
+  margin-left:0px;
+  margin-top:320px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 175%;
+  color: #757575;
+  font-weight: 300;
+}
+
+
+
+h1, input {
+  font-family: "Gotham Book", Arial, sans-serif;
+}
+
+p {
+  font-family: "Gotham Medium", Arial, sans-serif;
+}
+
+.input {
+  width: 75%;
+  height: 50px;
+  display: block;
+  margin: 0 auto 15px;
+  padding: 0 15px;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+}
+
+
+.inputButton {
+  position: relative;
+  width: 85%;
+  height: 50px;
+  display: block;
+  margin: 30px auto 30px;
+  color: white;
+  background-color: #343635;
+  border: none;
+  
+}
+
+.inputButton:active {
+  top: 5px;
+  box-shadow: none;
+}
