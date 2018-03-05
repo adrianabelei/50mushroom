@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 defined('BASEPATH') OR exit('No direct script access allowed');
+=======
+defined('BASEPATH') or exit('No direct script access allowed');
+>>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
 
 /*
 | -------------------------------------------------------------------
@@ -28,7 +32,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | 6. Language files
 | 7. Models
 |
+<<<<<<< HEAD
 */
+=======
+ */
+>>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
 
 /*
 | -------------------------------------------------------------------
@@ -38,7 +46,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 |  $autoload['packages'] = array(APPPATH.'third_party', '/usr/local/shared');
 |
+<<<<<<< HEAD
 */
+=======
+ */
+>>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
 $autoload['packages'] = array();
 
 /*
@@ -57,8 +69,15 @@ $autoload['packages'] = array();
 | in the controller:
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
+<<<<<<< HEAD
 */
 $autoload['libraries'] = array('database', 'session');
+=======
+<<<<<<< HEAD
+ */
+
+$autoload['libraries'] = array('database', 'form_validation', 'session');
+>>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
 
 /*
 | -------------------------------------------------------------------
@@ -78,7 +97,11 @@ $autoload['libraries'] = array('database', 'session');
 |
 |	$autoload['drivers'] = array('cache' => 'cch');
 |
+<<<<<<< HEAD
 */
+=======
+ */
+>>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
 $autoload['drivers'] = array();
 
 /*
@@ -88,7 +111,11 @@ $autoload['drivers'] = array();
 | Prototype:
 |
 |	$autoload['helper'] = array('url', 'file');
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
 $autoload['helper'] = array('url');
 
 /*
@@ -102,7 +129,11 @@ $autoload['helper'] = array('url');
 | NOTE: This item is intended for use ONLY if you have created custom
 | config files.  Otherwise, leave it blank.
 |
+<<<<<<< HEAD
 */
+=======
+ */
+>>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
 $autoload['config'] = array();
 
 /*
@@ -116,7 +147,11 @@ $autoload['config'] = array();
 | NOTE: Do not include the "_lang" part of your file.  For example
 | "codeigniter_lang.php" would be referenced as array('codeigniter');
 |
+<<<<<<< HEAD
 */
+=======
+ */
+>>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
 $autoload['language'] = array();
 
 /*
@@ -131,5 +166,10 @@ $autoload['language'] = array();
 | in the controller:
 |
 |	$autoload['model'] = array('first_model' => 'first');
+<<<<<<< HEAD
 */
 $autoload['model'] = array();
+=======
+ */
+$autoload['model'] = array('companymodel');
+>>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a

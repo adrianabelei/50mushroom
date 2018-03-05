@@ -1,6 +1,9 @@
 <?php 
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 class CompanyProcess extends CI_Controller 
+
+
 {
     public function __construct()
     {
@@ -11,6 +14,7 @@ class CompanyProcess extends CI_Controller
     public function index()
     {
         $this->load->view('index');
+
     }
 
 
@@ -75,12 +79,28 @@ class CompanyProcess extends CI_Controller
 		}
     }
 
-
+    public function readpost()
+    {
+        $this->load->model('company_Model');
+        $result=$this->company_Model->postsread();
+        var_dump($result);
+    } 
 
 
 
 
 
     ///////////////// END OF THE CLASS////////////////////////
+
+
+
+ 
+
+
+    
 }
+
+
+
+
 ?>
