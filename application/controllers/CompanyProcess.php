@@ -13,7 +13,7 @@ class CompanyProcess extends CI_Controller
         $this->load->model('companyModel');
         $result['results']=$this->companyModel->postsread();
         $this->load->view("index",$result);
-        var_dump($result);
+        
         
     }
     //////// Login/Register Page /////////////
@@ -80,7 +80,7 @@ class CompanyProcess extends CI_Controller
     {
         $this->load->model('company_Model');
         $result=$this->company_Model->postsread();
-        var_dump($result);
+        
     } 
     ///////////////// END OF THE CLASS////////////////////////
 public function company()
