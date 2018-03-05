@@ -77,7 +77,7 @@ class CompanyProcess extends CI_Controller
         // $this->session->set_userdata($array_items);
         // $this->session->set_userdata('id',$query['id']);
         // $this->session->set_userdata('company_name',$query['company_name']);
-        $this->load->view('index');
+        $this->load->view('adminpanel/indexcompany');
         // ,array('article' => $articles )
           
 		
