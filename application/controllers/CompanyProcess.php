@@ -14,6 +14,7 @@ class CompanyProcess extends CI_Controller
         $this->load->helper("url");
     }
     
+    
     public function index()
     {
         $this->load->model('companyModel');
