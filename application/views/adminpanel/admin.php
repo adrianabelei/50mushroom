@@ -10,7 +10,7 @@
 	<!-- BOOTSTRAP STYLES-->
     <link href=" <?php echo base_url(); ?>assets/adminpanel/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
-    <link href=" <?php echo base_url(); ?>assets/adminpanel/css/font-awesome.css" rel="stylesheet" />
+    <link href=" <?php echo base_url(); ?>assets/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
     <link href="assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
