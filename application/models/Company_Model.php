@@ -18,6 +18,14 @@ class Company_Model extends CI_Model
         $checker =$this->db->query($query,$value)->row_array();
         return $checker;
     }
+    function postsread()
+	{	
+
+        $query = "SELECT * from posts ";
+        return $this->db->query($query)->result_array();
+	}
+
+    
 
 }
 ?>

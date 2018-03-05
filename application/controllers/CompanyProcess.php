@@ -13,8 +13,8 @@ class CompanyProcess extends CI_Controller
     
     public function index()
     {
-        $this->load->model('companyModel');
-        $result['results']=$this->companyModel->postsread();
+        $this->load->model('Company_Model');
+        $result['results']=$this->Company_Model->postsread();
         $this->load->view("index",$result);
 
         
@@ -55,8 +55,8 @@ class CompanyProcess extends CI_Controller
     
         else 
         {
-        $this->load->model('company_model');
-        $this->company_model->insertCompany($regInfo);
+        $this->load->model('Company_Model');
+        $this->Company_Model->insertCompany($regInfo);
         $message='You are successfully registirated, Please Login';
         $this->load->view('joinpage', array('errors' => $message));
         }
