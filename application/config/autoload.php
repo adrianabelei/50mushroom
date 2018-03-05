@@ -1,9 +1,7 @@
 <?php
-<<<<<<< HEAD
+
 defined('BASEPATH') OR exit('No direct script access allowed');
-=======
-defined('BASEPATH') or exit('No direct script access allowed');
->>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
+
 
 /*
 | -------------------------------------------------------------------
@@ -32,11 +30,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | 6. Language files
 | 7. Models
 |
-<<<<<<< HEAD
+
 */
-=======
- */
->>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
+
 
 /*
 | -------------------------------------------------------------------
@@ -48,9 +44,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 <<<<<<< HEAD
 */
-=======
- */
->>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
+
 $autoload['packages'] = array();
 
 /*
@@ -71,13 +65,10 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 <<<<<<< HEAD
 */
-$autoload['libraries'] = array('database', 'session');
-=======
-<<<<<<< HEAD
- */
+
 
 $autoload['libraries'] = array('database', 'form_validation', 'session');
->>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
+
 
 /*
 | -------------------------------------------------------------------
@@ -99,9 +90,8 @@ $autoload['libraries'] = array('database', 'form_validation', 'session');
 |
 <<<<<<< HEAD
 */
-=======
- */
->>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
+
+
 $autoload['drivers'] = array();
 
 /*
@@ -113,9 +103,6 @@ $autoload['drivers'] = array();
 |	$autoload['helper'] = array('url', 'file');
 <<<<<<< HEAD
 */
-=======
-
->>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
 $autoload['helper'] = array('url');
 
 /*
@@ -131,9 +118,8 @@ $autoload['helper'] = array('url');
 |
 <<<<<<< HEAD
 */
-=======
- */
->>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
+
+
 $autoload['config'] = array();
 
 /*
@@ -149,9 +135,7 @@ $autoload['config'] = array();
 |
 <<<<<<< HEAD
 */
-=======
- */
->>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
+
 $autoload['language'] = array();
 
 /*
@@ -168,8 +152,6 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 <<<<<<< HEAD
 */
-$autoload['model'] = array();
-=======
- */
+
 $autoload['model'] = array('companymodel');
->>>>>>> 226347333801f116a963fe7fc7fbd0a0c0e3053a
+
