@@ -109,7 +109,7 @@ $(document).ready(function () {
                 </ul>
             </li>
              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="gallery-4col.htm">Gallery <b class="caret"></b></a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="">Gallery <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="gallery-3col.htm">Gallery 3 Column</a></li>
                     <li><a href="gallery-4col.htm">Gallery 4 Column</a></li>
