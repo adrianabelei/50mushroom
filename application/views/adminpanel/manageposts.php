@@ -35,7 +35,7 @@
                         </div>
 
  
- <form action="/addpost" method="POST">
+ <form action="/addpost" method="POST" enctype="multipart/form-data">
   <div class="form-group">
     <label for="exampleTextarea">Post</label>
     <textarea name = "title" class="form-control" id="exampleTextarea" rows="1" placeholder="Title"></textarea><br>

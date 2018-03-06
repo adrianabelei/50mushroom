@@ -225,11 +225,11 @@ $(document).ready(function () {
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
                                 <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
-                                <a href="gallery-single.htm" class="item-details-link"></a>
+                                <a href="detailpost/<?= $item['id'] ?>" class="item-details-link"></a>
                             </span>
                         </span>
                         <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>uploads/<?= $item['image'] ?>" alt="Gallery"></a>
-                        <span class="project-details"><a href="gallery-single.htm"><?= $item['title'] ?></a><?= $item['description'] ?></span>
+                        <span class="project-details"><a href="detailpost/<?= $item['id'] ?>"><?= $item['title'] ?></a><?= $item['description'] ?></span>
                     </li>
 
         <?php } 

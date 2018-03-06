@@ -127,17 +127,40 @@ class CompanyProcess extends CI_Controller
 function addpost()
     {
         $postform = $this->input->post(null, true);
-
-            $image=$_FILES['image']['name'];
-	
-
+        $image=$_FILES['image']['name'];
         $this->load->model('company_Model');
         $this->company_Model->addPost($postform,$image);
-        $posts = $this->company_Model->takePost();
-        $this->load->view('adminpanel/manageposts', ['posts' => $posts]);
+        $config['upload_path']= 'uploads/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $this->load->library('upload', $config);
+        if ( ! $this->upload->do_upload('image'))
+                {
+                    $data=0;
+                        
+                }
+                else
+                {
+                        $data = array('upload_data' => $this->upload->data());
+
+                }
+       
+        $this->load->view('adminpanel/manageposts');
+        
+    }
+
+    function detailpost($id)
+    {
+
+                $this->load->model('Company_Model');
+                $result['results']=$this->Company_Model->postsOneRead($id);
+                $this->load->view('galery-single',$result);
+
+
     }
  
 }
+
+
 
 
 

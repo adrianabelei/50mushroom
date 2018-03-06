@@ -56,6 +56,7 @@ $route['register'] = 'CompanyProcess/register';
 $route['companytwq']='Companyprocess/company';
 $route['managepost']='Companyprocess/managepost';
 $route['addpost']='Companyprocess/addpost';
+$route['detailpost/(:any)'] = 'Companyprocess/detailpost/$1';;
 
 
 $route['login'] = 'CompanyProcess/login';
