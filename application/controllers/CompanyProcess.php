@@ -25,9 +25,7 @@ class CompanyProcess extends CI_Controller
     {
     $this->load->view('joinpage');
     }
-    public function admin(){
-        $this->load->view("adminpanel/adminlogin");
-    }
+   
 
         
 

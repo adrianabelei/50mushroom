@@ -58,6 +58,6 @@ $route['managepost']='Companyprocess/managepost';
 
 $route['login'] = 'CompanyProcess/login';
 $route['show'] = 'Companyprocess/readpost';
-$route['adminwsq'] = 'Companyprocess/admin';
+$route['adminwsq'] = 'Adminprocess/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
