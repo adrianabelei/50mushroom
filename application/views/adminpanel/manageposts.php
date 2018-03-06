@@ -34,38 +34,30 @@
                              <strong>Welcome USER  </strong> 
                         </div>
 
+ 
+ <form action="/addpost" method="POST">
   <div class="form-group">
     <label for="exampleTextarea">Post</label>
-    <textarea class="form-control" id="exampleTextarea" rows="1" placeholder="Title"></textarea><br>
+    <textarea name = "title" class="form-control" id="exampleTextarea" rows="1" placeholder="Title"></textarea><br>
 
-    <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Description"></textarea><br>
+    <textarea name ="description" class="form-control" id="exampleTextarea" rows="4" placeholder="Description"></textarea><br>
     <div class="form-group row">
   <div class="col-10">
   <label for="basic-url">Your URL</label>
 <div class="input-group">
   <span class="input-group-addon" id="basic-addon3"></span>
-  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="www.website.com">
+  <input type="text" name="link" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="www.website.com">
 </div>
-  
   
 <div class="form-group">
     <label for="exampleInputFile">Upload image</label>
-    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    <input type="file" name="image" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
     
   </div>
   </div>
 </div>
-      <br><br>
+      
 
-    <button type="button" class="btn btn-secondary btn-sm">Add</button>
-    <button type="button" class="btn btn-secondary btn-sm">Edit</button>
-    <button type="button" class="btn btn-secondary btn-sm">Delete</button>
-    <button type="button" class="btn btn-secondary btn-sm">Approve</button>
-    <button type="button" class="btn btn-secondary btn-sm">Reject</button>
-    <br><br>
-  
-  </div>
-<form>
 <div class="form-group">
     <label for="exampleSelect1">Type of content</label>
     <select class="form-control" id="exampleSelect1">
@@ -73,11 +65,11 @@
       <option>Standard content</option>
       </select>
       </div>
-      </form>
-</form>
+     
+
   <div class="form-group">
     <label for="exampleSelect1">Tags</label>
-    <select class="form-control" id="exampleSelect1">
+    <select name ="tag" class="form-control" id="exampleSelect1">
     <option>Growth</option>
       <option>International</option>
       <option>City</option>
@@ -95,10 +87,19 @@
   <div class="col-10">
   <label for="example-number-input" class="col-2 col-form-label">Open positions</label>
  
-    <input class="form-control" type="number"  id="example-number-input">
+    <input class="form-control" name ="vacancies" type="number"  id="example-number-input">
   <label for="example-number-input" class="col-2 col-form-label">Filled positions</label>
-    <input class="form-control" type="number"  id="example-number-input">
+    <input class="form-control" name ="fiiled_position" type="number"  id="example-number-input">
   </div>
-</form>
+  </div>
 
+  <br><br><br>
+
+<button type="button" class="btn btn-secondary btn-sm">Add</button>
+<button type="button" class="btn btn-secondary btn-sm">Approve</button>
+<button type="button" class="btn btn-secondary btn-sm">Reject</button>
+<br><br>
+
+
+</form>
 </body>

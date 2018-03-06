@@ -13,6 +13,7 @@ class CompanyProcess extends CI_Controller
     
     public function index()
     {
+    if (isset($_SESSION['company_id']))
         $this->load->model('Company_Model');
         $result['results']=$this->Company_Model->postsread();
         $this->load->view("index",$result);
@@ -117,13 +118,19 @@ class CompanyProcess extends CI_Controller
 }
 
  function managepost()
-{
+ {
     $this->load->view("adminpanel/manageposts");
-}
+ }
 
-
+function addpost()
+    {
+        $postform = $this->input->post(null, true);
+        $this->load->model('company_Model');
+        $this->company_Model->addPost($postform['title'], $_SESSION['id']);
+        $posts = $this->company_Model->takePost();
+        $this->load->view('adminpanel/manageposts', ['posts' => $posts]);
+    }
  
-    
 }
 
 

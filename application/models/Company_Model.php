@@ -18,6 +18,11 @@ class Company_Model extends CI_Model
         $checker =$this->db->query($query,$value)->row_array();
         return $checker;
     }
+
+
+
+
+    
     function postsread()
 	{	
 
@@ -25,7 +30,22 @@ class Company_Model extends CI_Model
         return $this->db->query($query)->result_array();
 	}
 
-    
+    public function addPost($post, $companiesid)
+    {
+        $query="INSERT INTO posts(title, description, link, image, tag, fiiled_position, vacancies, companies_id) VALUES (?,?,?,?,?,?,?,?)";
+        $values =["$post", $companiesid];
+        $this->db->query($query, $values);
+    }
+
+    public function takePost()
+    {
+        $query ="SELECT companies.company_name, posts.title, posts.description, posts.link, posts.image, posts.tag, posts.fiiled_position, posts.vacancies, posts.id
+        FROM companies
+        JOIN posts
+        ON companies.id = posts.companies_id
+        ORDER BY posts.id DESC";
+        return $this->db->query($query)->result_array();
+    }
 
 }
 ?>
