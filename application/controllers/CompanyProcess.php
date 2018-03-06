@@ -13,10 +13,10 @@ class CompanyProcess extends CI_Controller
     
    public function index()
      {
-     //// if (isset($_SESSION['company_id']))
-        ////  $this->load->model('company_Model');
-        ////  $result['results']=$this->company_Model->postsread();
-          $this->load->view("index");
+      
+         $this->load->model('Company_Model');
+         $result['results']=$this->Company_Model->postsread();
+          $this->load->view("index",$result);
 
         
         
