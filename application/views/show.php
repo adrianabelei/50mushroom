@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Piccolo Theme</title>
+<title>Post</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- CSS
@@ -147,7 +147,7 @@
 
             <div class="row">
                 <div class="span6">
-                    <img src="img/gallery/gallery-img-1-full.jpg" class="align-left thumbnail" alt="image">
+                    <img src="<?php echo base_url(); ?>uploads/<?= $results['image'] ?>" class="align-left thumbnail" alt="image">
                 </div>
                 <div class="span6">
                     <h2><?= $results['title'] ?></h2>
