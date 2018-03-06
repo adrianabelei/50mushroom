@@ -8,10 +8,10 @@
 <!-- CSS
 ================================================== -->
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/bootstrap-responsive.css">
-<link rel="stylesheet" href="css/prettyPhoto.css" />
-<link rel="stylesheet" href="css/custom-styles.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/prettyPhoto.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom-styles.css">
 
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,19 +20,19 @@
 
 <!-- Favicons
 ================================================== -->
-<link rel="shortcut icon" href="img/favicon.ico">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="<?php echo base_url(); ?>assets/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url(); ?>assets/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url(); ?>assets/img/apple-touch-icon-114x114.png">
 
 <!-- JS
 ================================================== -->
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/jquery.quicksand.js"></script>
-<script src="js/jquery.custom.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.easing.1.3.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.prettyPhoto.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.quicksand.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.custom.js"></script>
 
 </head>
 
@@ -126,7 +126,7 @@
                         <option value="blog-style1.htm">- Blog Style 1</option>
                         <option value="blog-style2.htm">- Blog Style 2</option>
                         <option value="blog-style3.htm">- Blog Style 3</option>
-                        <option value="blog-style4.htm">- Blog Style 4</option>
+                        <option value="blog-style4.gşthtm">- Blog Style 4</option>
                         <option value="blog-single.htm">- Blog Single</option>
                     <option value="page-contact.htm">Contact</option>
                 </select>
@@ -150,19 +150,17 @@
                     <img src="img/gallery/gallery-img-1-full.jpg" class="align-left thumbnail" alt="image">
                 </div>
                 <div class="span6">
-                    <h2>Custom Illustration</h2>
-                    <p class="lead">For an international ad campaign. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. Vivamus tincidunt sem eu magna varius elementum. Maecenas felis tellus, fermentum vitae laoreet vitae, volutpat et urna. Nulla faucibus ligula eget ante varius ac euismod odio placerat. Nam sit amet felis non lorem faucibus rhoncus vitae id dui.</p>
+                    <h2><?= $results['title'] ?></h2>
+                    <p class="lead"><?= $results['description'] ?></p>
 
                     <ul class="project-info">
-                        <li><h6>Date:</h6> 09/12/15</li>
-                        <li><h6>Client:</h6> John Doe, Inc.</li>
-                        <li><h6>Services:</h6> Design, Illustration</li>
-                        <li><h6>Art Director:</h6> Jane Doe</li>
-                        <li><h6>Designer:</h6> Jimmy Doe</li>
+                    <li><h6>Tag:</h6> <?= $results['tag'] ?></li>
+                        <li><h6>Date:</h6><?= $results['created_at'] ?></li>
+                        <li><h6>Filled Position:</h6> <?= $results['fiiled_position'] ?></li>
+                        
                     </ul>
 
-                    <button class="btn btn-inverse pull-left" type="button">Visit Website</button>
+                    <button class="btn btn-inverse pull-left" type="button" href="<?= $results['link'] ?>">Visit Website</button>
                     <a href="#" class="pull-right"><i class="icon-arrow-left"></i>Back to Gallery</a>
                 </div>
             </div>

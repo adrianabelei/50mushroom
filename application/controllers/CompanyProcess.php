@@ -153,7 +153,7 @@ function addpost()
 
                 $this->load->model('Company_Model');
                 $result['results']=$this->Company_Model->postsOneRead($id);
-                $this->load->view('galery-single',$result);
+                $this->load->view('show',$result);
 
 
     }
