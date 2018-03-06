@@ -55,6 +55,8 @@ $route['login_register'] = 'CompanyProcess/joinpage';
 $route['register'] = 'CompanyProcess/register';
 $route['companytwq']='Companyprocess/company';
 $route['managepost']='Companyprocess/managepost';
+$route['addpost']='Companyprocess/addpost';
+
 
 $route['login'] = 'CompanyProcess/login';
 $route['show'] = 'Companyprocess/readpost';

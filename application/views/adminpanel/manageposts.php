@@ -95,9 +95,7 @@
 
   <br><br><br>
 
-<button type="button" class="btn btn-secondary btn-sm">Add</button>
-<button type="button" class="btn btn-secondary btn-sm">Approve</button>
-<button type="button" class="btn btn-secondary btn-sm">Reject</button>
+<button type="submit" class="btn btn-secondary btn-sm">Add</button>
 <br><br>
 
 

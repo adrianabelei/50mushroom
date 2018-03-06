@@ -124,11 +124,15 @@ class CompanyProcess extends CI_Controller
     $this->load->view("adminpanel/manageposts");
  }
 
-function companyaddpost()
+function addpost()
     {
         $postform = $this->input->post(null, true);
+
+            $image=$_FILES['image']['name'];
+	
+
         $this->load->model('company_Model');
-        $this->company_Model->addPost($postform['title'], $_SESSION['id']);
+        $this->company_Model->addPost($postform,$image);
         $posts = $this->company_Model->takePost();
         $this->load->view('adminpanel/manageposts', ['posts' => $posts]);
     }
