@@ -228,7 +228,7 @@ $(document).ready(function () {
                                 <a href="gallery-single.htm" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-4col.jpg" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>uploads/<?= $item['image'] ?>" alt="Gallery"></a>
                         <span class="project-details"><a href="gallery-single.htm"><?= $item['title'] ?></a><?= $item['description'] ?></span>
                     </li>
 
