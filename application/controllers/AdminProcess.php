@@ -27,9 +27,9 @@ class AdminProcess extends CI_Controller
 	{
 if (isset($_SESSION['superadmin_id'])) {
     $this->load->view('adminpanel/indexadminpanel');
-} else {
+    } else {
     echo "you are not logged in";
-}
+    }
        
         }
 
@@ -37,11 +37,13 @@ if (isset($_SESSION['superadmin_id'])) {
         public function loginadmin()
         {
             $loginfo = $this->input->post(null, true);
-  
+            var_dump($loginfo);
+            die();
             $this->load->model('admin_Model');
             $query = $this->admin_Model->logincheckeradmin($loginfo);
+        
             $_SESSION['superadmin_id'] = $query['id'];
-echo $_SESSION['superadmin_id'];
+        
             if ($query) {
                 $array_items=array(
                     'id' => $query['id'],

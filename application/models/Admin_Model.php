@@ -9,8 +9,8 @@ class Admin_Model extends CI_Model
     {
         $query='SELECT * FROM superadmin WHERE email= ? AND password =?';
         $value=[$superadminEmail['email'], $superadminEmail['password']];
-        $checker =$this->db->query($query,$value)->row_array();
-        return $checker;
+        return $this->db->query($query,$value)->row_array();
+        
     }
 
 }
