@@ -113,7 +113,7 @@
 
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                             <div class="div-square">
-                                <a href="manage" >
+                                <a href="seeposts" >
                                     <i class="fa fa-lightbulb-o fa-5x"></i>
                                     <h4>See Posts </h4>
                                 </a>

@@ -160,6 +160,15 @@ function addpost()
 
 
     }
+
+
+    public function seeposts()
+    {
+        $this->load->model('Company_Model');
+        $result['results']=$this->Company_Model->postsread();
+        $this->load->view("companypanel/seeposts",$result);;
+
+    }
  
 }
 
