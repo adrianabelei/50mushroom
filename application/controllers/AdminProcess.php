@@ -37,11 +37,16 @@ if (isset($_SESSION['superadmin_id'])) {
         public function loginadmin()
         {
             $loginfo = $this->input->post(null, true);
+  
             $this->load->model('admin_Model');
-            $query = $this->craiglistmodel->logincheckeradmin($loginfo);
-    
+            $query = $this->admin_Model->logincheckeradmin($loginfo);
+            $_SESSION['superadmin_id'] = $query['id'];
+echo $_SESSION['superadmin_id'];
             if ($query) {
-                $this->session->set_userdata('id', $query['id']);
+                $array_items=array(
+                    'id' => $query['id'],
+                    'first-name' => $query['first_name']);
+                
                 $this->load->view('adminpanel/indexadminpanel');
             } else {
                 $errorlog = "Please check your information!";
@@ -62,6 +67,23 @@ if (isset($_SESSION['superadmin_id'])) {
          {
             $this->load->view("adminpanel/adminpanel");
          }
+
+        public function addsuperuser()
+        {
+
+        }
+
+        public function adduser()
+        {
+
+        }
+
+
+
+
+
+
+
     }
 
  

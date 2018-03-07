@@ -17,13 +17,15 @@
 <body>
 <body>
 <hr />
-                  <div class="row">
+                  
+
+<div class="row">
                     <div class="col-lg-12 ">
                         <div class="alert alert-warning">
                              <strong>Welcome USER  </strong> 
                         </div>
+                        <br>
  
-<br>
 <button type="button" class="btn btn-secondary btn-sm">Modify superadmin</button>
 <br><br>
    </div>
