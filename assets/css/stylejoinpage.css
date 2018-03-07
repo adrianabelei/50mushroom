@@ -1,8 +1,8 @@
 body {
     
     text-align:center;
-    background-size: cover;
-    background-position: center;
+    
+    
   
   
   }
@@ -16,7 +16,7 @@ body {
   #logbox1, #logbox2 {
     display:inline-block;
     padding: 10px;
-    margin: 150px auto;
+    margin: 50px auto;
     width: 340px;
     background-color: #e06a26;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -24,18 +24,6 @@ body {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   }
   
-  #logbox1 {
-    margin-left:50px;
-    margin-top: 250px;
-    
-
-  }
-  
-  
-  #logbox2 {
-    margin-left:0px;
-    margin-top:320px;
-  }
   
   h1 {
     text-align: center;
