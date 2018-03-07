@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['default_controller'] = 'CompanyProcess/index';
+$route['index'] = 'CompanyProcess/index';
 $route['login_register'] = 'CompanyProcess/joinpage';
 $route['register'] = 'CompanyProcess/register';
 $route['companytwq']='Companyprocess/company';
@@ -67,5 +68,6 @@ $route['panel'] = 'Adminprocess/bringadminpanel';
 $route['companytwq']='Adminprocess/company';
 $route['managepost']='Adminprocess/managepost';
 $route['superadmin']='Adminprocess/superaccess';
+$route['contact']='Companyprocess/contact';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
