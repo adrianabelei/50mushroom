@@ -51,6 +51,24 @@ class Company_Model extends CI_Model
 
       
     }
+
+
+    public function editonecompany($result,$id,$image)
+    {
+        $myquery = "UPDATE companies SET company_name =?, email=?, password=?, company_logo=?, adress=?,phonenumber=?,type=?   WHERE id=?";
+        $values = array($result['company_name'],$result['email'],$result['password'],$image,$result['adress'],$result['phonenumber'],$result['type'],$id);
+        return $this->db->query($myquery, $values);
+    }
+
+    public function companydetail()
+    {
+        $id=$this->session->userdata('company_id');
+        $myquery = "SELECT * FROM companies WHERE id=? ";
+        $values = $id;
+        return $this->db->query($myquery, $values)->row_array();
+      
+        
+    }
     
 
 

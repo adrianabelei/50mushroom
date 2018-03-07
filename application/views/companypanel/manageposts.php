@@ -96,6 +96,7 @@
   <br><br><br>
 
 <button type="submit" class="btn btn-secondary btn-sm">Add</button>
+<a href="login" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
 <br><br>
 
 
