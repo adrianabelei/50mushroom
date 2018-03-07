@@ -50,7 +50,14 @@ $this->load->view('joinpage');
 
     
     }
-   
+   public function companydetail()
+   {
+        $this->load->model('Company_Model');
+         $result['results']=$this->Company_Model->companydetail();
+         var_dump($result);
+          $this->load->view("companypanel/companydetail",$result);
+       
+   }
 
     public function login()
 	{
@@ -210,6 +217,38 @@ function addpost()
 
 
     }
+
+
+     function companyeditpage(){
+        
+        $this->load->view('companypanel/companyedit');
+
+
+    }
+
+public function editonecompany()
+{       $result=$this->input->post(null,false);
+        $image=$_FILES['image']['name'];
+        $id=$this->session->userdata('company_id');
+        $this->load->model("Company_Model");
+        $result2=$this->Company_Model->editonecompany($result,$id,$image);
+        $config['upload_path']= 'uploads/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $this->load->library('upload', $config);
+        if ( ! $this->upload->do_upload('image'))
+
+                {
+                    $data=0;
+                        
+                }
+                else
+                {
+                        
+
+                }
+                $this->load->view('companypanel/indexcompany');
+}
+
 
 
      function editpost(){

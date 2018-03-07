@@ -61,6 +61,13 @@ $route['seeposts']='Companyprocess/seeposts';
 $route['editonepost/(:any)']='Companyprocess/editonepost/$1';
 $route['logout']='Companyprocess/logout';
 $route['editpost']='Companyprocess/editpost';
+$route['companydetail']='Companyprocess/companydetail';
+$route['companyeditpage']='Companyprocess/companyeditpage';
+$route['editonecompany']='Companyprocess/editonecompany';
+
+
+
+
 
 $route['detailpost/(:any)'] = 'Companyprocess/detailpost/$1';
 $route['detailpostcompany/(:any)'] = 'Companyprocess/detailpostcompany/$1';

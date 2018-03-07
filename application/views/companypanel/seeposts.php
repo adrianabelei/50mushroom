@@ -20,7 +20,8 @@
                   <div class="row">
                     <div class="col-lg-12 ">
                         <div class="alert alert-warning">
-                             <strong>Welcome USER  </strong> 
+                             <strong>Welcome USER  </strong>
+                             <a href="login" class="pull-right"><i class="icon-arrow-left"></i>Back</a> 
                         </div>
 
 <br><br>
@@ -60,4 +61,5 @@
                     
                    </tbody>
 
+            
             </table>

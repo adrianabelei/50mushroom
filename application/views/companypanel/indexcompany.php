@@ -83,7 +83,7 @@
 
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                             <div class="div-square">
-                                <a href="manage" >
+                                <a href="companyeditpage" >
                                     <i class="fa fa-envelope-o fa-5x"></i>
                                     <h4>Company Edit</h4>
                                 </a>
@@ -92,7 +92,7 @@
                             
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                             <div class="div-square">
-                                <a href="manage" >
+                                <a href="companydetail" >
                                     <i class="fa fa-envelope-o fa-5x"></i>
                                     <h4>Company Details</h4>
                                 </a>
