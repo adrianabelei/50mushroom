@@ -111,7 +111,6 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
                       <h4>See Posts</h4>
 
                       </a>
-<<<<<<< HEAD
                       </div>
 </div>
                      
@@ -133,7 +132,7 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
                            <a href=" " >
 
                     <i class="fa fa-circle-o-notch fa-5x"></i>
-                      <h4>Rejected Posts</h4>
+                      <h4>Undecided Companies</h4>
 
                    
                       </a>
@@ -141,7 +140,6 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
 
                          
     </div>
-=======
                       </div>                         
     </div>
 
@@ -155,7 +153,6 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
 
 
 
->>>>>>> 24621c272fca21c6dd76c638e6adb1c6606468d8
 
              <!-- /. PAGE INNER  -->
     </div>
