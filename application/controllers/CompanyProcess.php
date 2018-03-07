@@ -24,7 +24,19 @@ class CompanyProcess extends CI_Controller
     //////// Login/Register Page /////////////
     public function joinpage()
     {
-    $this->load->view('joinpage');
+if($this->session->userdata('company_id'))
+        {
+            $this->load->view("companypanel/indexcompany");
+
+        }
+        else {
+            {
+$this->load->view('joinpage');  
+
+            }
+        }
+
+    
     }
    
 
@@ -168,6 +180,14 @@ function addpost()
         $result['results']=$this->Company_Model->postsread();
         $this->load->view("companypanel/seeposts",$result);;
 
+    }
+
+    public function detailpostcompany($id)
+    {
+         $this->load->model('Company_Model');
+                $result['results']=$this->Company_Model->postsOneRead($id);
+                $this->load->view('companypanel/seepostedit',$result);
+        # code...
     }
  
 }
