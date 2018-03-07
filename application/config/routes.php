@@ -57,6 +57,10 @@ $route['companytwq']='Companyprocess/company';
 $route['manage']='Companyprocess/manage';
 $route['addpost']='Companyprocess/addpost';
 $route['seeposts']='Companyprocess/seeposts';
+$route['editonepost/(:any)']='Companyprocess/editonepost/$1';
+$route['logout']='Companyprocess/logout';
+$route['editpost']='Companyprocess/editpost';
+
 $route['detailpost/(:any)'] = 'Companyprocess/detailpost/$1';
 $route['detailpostcompany/(:any)'] = 'Companyprocess/detailpostcompany/$1';
 $route['login'] = 'CompanyProcess/login';

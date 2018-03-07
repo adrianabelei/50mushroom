@@ -21,6 +21,13 @@ class CompanyProcess extends CI_Controller
         
         
     }
+
+public function logout()
+{
+    session_destroy();
+    $this->load->view("joinpage");
+}
+
     //////// Login/Register Page /////////////
     public function joinpage()
     {
@@ -165,7 +172,7 @@ function addpost()
 
     function detailpost($id)
     {
-
+                
                 $this->load->model('Company_Model');
                 $result['results']=$this->Company_Model->postsOneRead($id);
                 $this->load->view('show',$result);
@@ -177,10 +184,12 @@ function addpost()
     public function seeposts()
     {
         $this->load->model('Company_Model');
-        $result['results']=$this->Company_Model->postsread();
+        $result['results']=$this->Company_Model->postsOnecompany();
         $this->load->view("companypanel/seeposts",$result);;
 
     }
+
+    
 
     public function detailpostcompany($id)
     {
@@ -189,6 +198,45 @@ function addpost()
                 $this->load->view('companypanel/seepostedit',$result);
         # code...
     }
+
+    function editonepost($id){
+        $this->session->set_userdata('company_updated_id', $id);
+        $this->load->view('companypanel/editpost');
+
+
+    }
+
+
+     function editpost(){
+
+        $result=$this->input->post(null,false);
+        $image=$_FILES['image']['name'];
+        $id=$this->session->userdata('company_updated_id');
+        $this->load->model("Company_Model");
+        $result2=$this->Company_Model->editone($result,$id,$image);
+        
+        $config['upload_path']= 'uploads/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $this->load->library('upload', $config);
+        if ( ! $this->upload->do_upload('image'))
+
+                {
+                    $data=0;
+                        
+                }
+                else
+                {
+                        
+
+                }
+                $this->load->view('companypanel/indexcompany');
+
+        
+
+
+    }
+
+
  
 }
 

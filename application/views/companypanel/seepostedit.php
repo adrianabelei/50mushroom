@@ -159,12 +159,11 @@
                         <li><h6>Filled Position:</h6> <?= $results['fiiled_position'] ?></li>
                         <li><h6>Filled Position:</h6> <?= $results['link'] ?></li>
                         <li><h6>vacancies:</h6> <?= $results['vacancies'] ?></li>
-                        <li><h6>is_decided:</h6> <?= $results['is_decided'] ?></li>
-                        <li><h6>Is Highlighted:</h6> <?= $results['is_higligted'] ?></li>
+                    
                         
                     </ul>
-
-                    <button class="btn btn-inverse pull-left" type="submit" href="editonepost/<?= $results['id'] ?>">Edit</button>
+                    <a class="btn btn-inverse pull-left" type="submit" href="/editonepost/<?= $results['id'] ?>">Edit</button>
+                    
                     <a href="#" class="pull-right"><i class="icon-arrow-left"></i>Back to Gallery</a>
                 </div>
             </div>

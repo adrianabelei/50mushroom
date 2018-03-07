@@ -25,6 +25,23 @@ class Company_Model extends CI_Model
         return $this->db->query($myquery, $values)->row_array();
     }
 
+     public function postsOnecompany()
+    {
+        $myquery = "SELECT * FROM posts WHERE companies_id=? and is_decided=? ";
+        $values = array($this->session->userdata('company_id'),1);
+        return $this->db->query($myquery, $values)->result_array();
+    }
+
+    public function editone($result,$id,$image)
+    {
+        $myquery = "UPDATE posts SET title =?, description=?, link=?, image=?, tag=?,fiiled_position=?,is_decided=?   WHERE id=?";
+        $values = array($result['title'],$result['description'],$result['link'],$image,$result['tag'],$result['fiiled_position'],0,$id);
+        return $this->db->query($myquery, $values);
+
+      
+    }
+    
+
 
     public function login($email, $password)
     {
