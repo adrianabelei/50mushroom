@@ -18,68 +18,9 @@ class AdminProcess extends CI_Controller
         
     }
 
-<<<<<<< HEAD
-//     public function bringadminpanel()
-// 	{
-// if (isset($_SESSION['superadmin_id'])) {
-//     $this->load->view('adminpanel/indexadminpanel');
-// } else {
-//     echo "you are not logged in";
-// }
-=======
-
-    
 
 
 
-    public function bringadminpanel()
-	{
-if (isset($_SESSION['superadmin_id'])) {
-    $this->load->view('adminpanel/indexadminpanel');
-    } else {
-    echo "you are not logged in";
-    }
->>>>>>> db2a57d11e55582b300b0fec15c838e207176e67
-       
-//         }
-
-
-<<<<<<< HEAD
-//         public function loginadmin()
-//         {
-//             $loginfo = $this->input->post(null, true);
-  
-//             $this->load->model('admin_Model');
-//             $query = $this->admin_Model->logincheckeradmin($loginfo);
-//             $_SESSION['superadmin_id'] = $query['id'];
-// echo $_SESSION['superadmin_id'];
-//             if ($query) {
-//                 $array_items=array(
-//                     'id' => $query['id'],
-//                     'first-name' => $query['first_name']);
-=======
-        public function loginadmin()
-        {
-            $loginfo = $this->input->post(null, true);
-            var_dump($loginfo);
-            die();
-            $this->load->model('admin_Model');
-            $query = $this->admin_Model->logincheckeradmin($loginfo);
-        
-            $_SESSION['superadmin_id'] = $query['id'];
-        
-            if ($query) {
-                $array_items=array(
-                    'id' => $query['id'],
-                    'first-name' => $query['first_name']);
->>>>>>> db2a57d11e55582b300b0fec15c838e207176e67
-                
-//                 $this->load->view('adminpanel/indexadminpanel');
-//             } else {
-//                 $errorlog = "Please check your information!";
-//                 $this->load->view('adminpanel/adminlogin', array('logerror' => $errorlog));
-//             }
-//         }
 
         function company()
         {
@@ -105,17 +46,6 @@ if (isset($_SESSION['superadmin_id'])) {
 
         }
 
-
-
-
-
-
-
-    
-
-
-
-   
 
     
 //////////////////// login SuperAdmin and Admin////////////////
