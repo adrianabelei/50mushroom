@@ -125,6 +125,7 @@ $this->load->view('joinpage');
                
            );
            $this->session->set_userdata($user1);
+           $this->session->set_userdata('company_id',$user1['id']);
            $this->load->view('companypanel/indexcompany', $user1);
 
        } else {

@@ -24,6 +24,13 @@ class Admin_Model extends CI_Model
     }
 
 
+     function readCompanies()
+	{	
+        $query = "SELECT * from companies ";
+        return $this->db->query($query)->result_array();
+    }
+
+
 
 
 

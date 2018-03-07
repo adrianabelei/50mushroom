@@ -105,5 +105,18 @@ class AdminProcess extends CI_Controller
 
 
 /////////////////// END OF THE CLASS //////////////////////
+
+public function seeUser()
+{
+
+    $this->load->model("Admin_Model");
+    $result['results']=$this->Admin_Model->readCompanies();
+    $this->load->view("adminpanel/seeCompanies",$result);
 }
+
+
+
+
+}
+
 ?>

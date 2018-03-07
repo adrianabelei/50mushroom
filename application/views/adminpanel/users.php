@@ -91,10 +91,10 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
                             <div class="row text-center pad-top">
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
-                           <a href="manageuser.php" >
+                           <a href="seeUser" >
 
- <i class="fa fa-circle-o-notch fa-5x"></i>
-                      <h4>See Users</h4>
+                    <i class="fa fa-circle-o-notch fa-5x"></i>
+                      <h4>See Companies</h4>
 
                    
                       </a>

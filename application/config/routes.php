@@ -65,15 +65,12 @@ $route['companydetail']='Companyprocess/companydetail';
 $route['companyeditpage']='Companyprocess/companyeditpage';
 $route['editonecompany']='Companyprocess/editonecompany';
 
-
-
-
-
 $route['detailpost/(:any)'] = 'Companyprocess/detailpost/$1';
 $route['detailpostcompany/(:any)'] = 'Companyprocess/detailpostcompany/$1';
 $route['login'] = 'CompanyProcess/login';
 $route['show'] = 'Companyprocess/readpost';
 $route['adminwsq'] = 'AdminProcess/index';
+$route['seeUser']='AdminProcess/seeUser';
 $route['login_admin'] = 'AdminProcess/login';
 $route['logout'] = 'AdminProcess/logout';
 $route['panel'] = 'Adminprocess/bringadminpanel';
