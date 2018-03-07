@@ -10,22 +10,12 @@ class Company_Model extends CI_Model
          $value=[$companyInfo['name'], $companyInfo['email'], $companyInfo['password']];
          $this->db->query($query, $value);
     }
-
-    public function loginChecker($companyEmail)
-    {
-        $query='SELECT * FROM companies WHERE email= ? AND password =?';
-        $value=[$companyEmail['email'], $companyEmail['password']];
-        $checker =$this->db->query($query,$value)->row_array();
-        return $checker;
-    }
-
+    
     function postsread()
 	{	
-
         $query = "SELECT * from posts ";
         return $this->db->query($query)->result_array();
 	}
-
     public function addPost($arg)
     {
         $query="INSERT INTO posts(title, description, link, image, tag, fiiled_position, vacancies, companies_id) VALUES (?,?,?,?,?,?,?,?)";
@@ -33,7 +23,6 @@ class Company_Model extends CI_Model
         $this->db->query($query, $values);
         redirect('/');
     }
-
     public function takePost()
     {
         $query ="SELECT companies.company_name, posts.title, posts.description, posts.link, posts.image, posts.tag, posts.fiiled_position, posts.vacancies, posts.id
@@ -44,6 +33,9 @@ class Company_Model extends CI_Model
         $posts= $this->db->query($query)->result_array();
         return $posts;
     }
+
+   
+
 
 }
 ?>

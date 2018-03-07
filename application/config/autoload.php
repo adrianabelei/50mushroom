@@ -153,4 +153,4 @@ $autoload['language'] = array();
 <<<<<<< HEAD
 */
 
-$autoload['model'] = array();
+$autoload['model'] = array('Company_Model','Admin_Model');

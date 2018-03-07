@@ -84,9 +84,8 @@
                         </div>
                     </div>
                     <!-- /. ROW  --> 
+                    <form action="dashboard" method="post">
                     <div class="row text-center pad-top">
-
-
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                             <div class="div-square">
                                 <a href="manageusers.php" >
@@ -114,6 +113,7 @@
                                     <h4>Admin</h4>
                                 </a>
                             </div>
+                        </form>
 
 
 

@@ -69,35 +69,7 @@ class CompanyProcess extends CI_Controller
  
  
     ////////////// Login /////////////////
-    public function login()
-	{
-
-		$logInfo=$this->input->post(null,true);
-		$this->load->model('company_model');
-        $query=$this->company_model->loginChecker($logInfo);
-        $_SESSION['company_id']=$query['id'];
-       
-        // $articles =$this->main_model->takeArticle();
-		if($query)
-		{
-        $array_items = array(
-            'id' => $query['id'],
-            'company_name' => $query['company_name']);
-            
-        // $this->session->set_userdata($array_items);
-        // $this->session->set_userdata('id',$query['id']);
-        // $this->session->set_userdata('company_name',$query['company_name']);
-        $this->load->view('adminpanel/indexcompany');
-        // ,array('article' => $articles )
-          
-		
-		}
-		else
-		{
-			$errlog='Please insert VALID email address OR password!';
-			$this->load->view('joinpage', array('errlog' => $errlog));
-		}
-    }
+    
 
 
     public function readpost()

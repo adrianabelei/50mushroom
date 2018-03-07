@@ -55,9 +55,13 @@ $route['login_register'] = 'CompanyProcess/joinpage';
 $route['register'] = 'CompanyProcess/register';
 $route['companytwq']='Companyprocess/company';
 $route['managepost']='Companyprocess/managepost';
-
 $route['login'] = 'CompanyProcess/login';
 $route['show'] = 'Companyprocess/readpost';
 $route['adminwsq'] = 'Adminprocess/index';
+$route['dashboard'] = 'Adminprocess/loginadmin';
+$route['panel'] = 'Adminprocess/bringadminpanel';
+$route['companytwq']='Adminprocess/company';
+$route['managepost']='Adminprocess/managepost';
+$route['superadmin']='Adminprocess/superaccess';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
