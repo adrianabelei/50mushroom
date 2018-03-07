@@ -1,23 +1,103 @@
 <?php 
 
 
-class AdminProcess extends CI_COntroller 
+class AdminProcess extends CI_Controller 
 
 {
-    public function index()
+    public function __construct()
     {
-    
-            $this->load->view('adminlogin'); 
-<<<<<<< HEAD
+        parent::__construct();
+        $this->load->helper("url");
 
     }
 
+    public function index()
+    {
+       
+        $this->load->view('adminpanel/adminlogin'); 
+        
+    }
 
+
+    
+<<<<<<< HEAD
+            $this->load->view('adminlogin'); 
+<<<<<<< HEAD
+=======
+>>>>>>> 25da7d171af8ea88f795e638cf76872f913ab694
+
+
+
+    public function bringadminpanel()
+	{
+if (isset($_SESSION['superadmin_id'])) {
+    $this->load->view('adminpanel/indexadminpanel');
+} else {
+    echo "you are not logged in";
 }
+       
+        }
 
+
+        public function loginadmin()
+        {
+            $loginfo = $this->input->post(null, true);
+  
+            $this->load->model('admin_Model');
+            $query = $this->admin_Model->logincheckeradmin($loginfo);
+            $_SESSION['superadmin_id'] = $query['id'];
+echo $_SESSION['superadmin_id'];
+            if ($query) {
+                $array_items=array(
+                    'id' => $query['id'],
+                    'first-name' => $query['first_name']);
+                
+                $this->load->view('adminpanel/indexadminpanel');
+            } else {
+                $errorlog = "Please check your information!";
+                $this->load->view('adminpanel/adminlogin', array('logerror' => $errorlog));
+            }
+        }
+
+        function company()
+        {
+            $this->load->view("adminpanel/indexcompany");
+        }
+         function managepost()
+         {
+            $this->load->view("adminpanel/manageposts");
+         }
+
+         function superaccess()
+         {
+            $this->load->view("adminpanel/adminpanel");
+         }
+
+        public function addsuperuser()
+        {
+
+        }
+
+        public function adduser()
+        {
+
+        }
+
+
+
+
+
+
+
+    }
+
+<<<<<<< HEAD
 =======
     }
 >>>>>>> abbi
+=======
+ 
+>>>>>>> 25da7d171af8ea88f795e638cf76872f913ab694
 
     
 //////////////////// login SuperAdmin and Admin////////////////

@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CONTROL PANEL</title>
         <!-- BOOTSTRAP STYLES-->
-        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/adminpanel/css/bootstrap.css"/>
         <!-- FONTAWESOME STYLES-->
-        <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/adminpanel/css/font-awesome.css" />
         <!-- CUSTOM STYLES-->
-        <link href="assets/css/custom.css" rel="stylesheet" />
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/adminpanel/css/custom.css"/>
         <!-- GOOGLE FONTS-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
         
@@ -56,7 +56,13 @@
             </div>
             <br><br><br>
             <!-- /. LOGIN FORM  -->
-            <form>
+            <?php if(isset($errlog)){
+            echo $errlog;
+           
+        }
+         ?>
+  
+  <form action="dashboard" id="signup" method="post" > 
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">

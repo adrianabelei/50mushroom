@@ -11,11 +11,12 @@ class CompanyProcess extends CI_Controller
     }
     
     
-    public function index()
-    {
-        $this->load->model('Company_Model');
-        $result['results']=$this->Company_Model->postsread();
-        $this->load->view("index",$result);
+   public function index()
+     {
+      
+         $this->load->model('Company_Model');
+         $result['results']=$this->Company_Model->postsread();
+          $this->load->view("index",$result);
 
         
         
@@ -25,9 +26,7 @@ class CompanyProcess extends CI_Controller
     {
     $this->load->view('joinpage');
     }
-    public function admin(){
-        $this->load->view("adminpanel/adminlogin");
-    }
+   
 
         
 
@@ -70,33 +69,7 @@ class CompanyProcess extends CI_Controller
  
  
     ////////////// Login /////////////////
-    public function login()
-	{
-
-		$logInfo=$this->input->post(null,true);
-		$this->load->model('company_model');
-        $query=$this->company_model->loginChecker($logInfo);
-        // $articles =$this->main_model->takeArticle();
-		if($query)
-		{
-        $array_items = array(
-            'id' => $query['id'],
-            'company_name' => $query['company_name']);
-            
-        // $this->session->set_userdata($array_items);
-        // $this->session->set_userdata('id',$query['id']);
-        // $this->session->set_userdata('company_name',$query['company_name']);
-        $this->load->view('adminpanel/indexcompany');
-        // ,array('article' => $articles )
-          
-		
-		}
-		else
-		{
-			$errlog='Please insert VALID email address OR password!';
-			$this->load->view('joinpage', array('errlog' => $errlog));
-		}
-    }
+    
 
 
     public function readpost()
@@ -119,14 +92,47 @@ class CompanyProcess extends CI_Controller
 }
 
  function managepost()
-{
+ {
     $this->load->view("adminpanel/manageposts");
-}
+ }
+
+function addpost()
+    {
+        $postform = $this->input->post(null, true);
+        $image=$_FILES['image']['name'];
+        $this->load->model('company_Model');
+        $this->company_Model->addPost($postform,$image);
+        $config['upload_path']= 'uploads/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $this->load->library('upload', $config);
+        if ( ! $this->upload->do_upload('image'))
+                {
+                    $data=0;
+                        
+                }
+                else
+                {
+                        $data = array('upload_data' => $this->upload->data());
+
+                }
+       
+        $this->load->view('adminpanel/manageposts');
+        
+    }
+
+    function detailpost($id)
+    {
+
+                $this->load->model('Company_Model');
+                $result['results']=$this->Company_Model->postsOneRead($id);
+                $this->load->view('show',$result);
 
 
+    }
  
-    
 }
+
+
 
 
 
