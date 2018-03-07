@@ -11,6 +11,17 @@ class Company_Model extends CI_Model
          $this->db->query($query, $value);
     }
     
+    public function add_user($arg = array())
+    {
+        return $this->db->insert('companies', $arg);
+    }
+ 
+    public function get_user_by_email($email)
+    {
+        return $this->db->query("SELECT * FROM companies WHERE email = ?", array($email))->row_array();
+    }
+
+
     function postsread()
 	{	
         $query = "SELECT * from posts ";

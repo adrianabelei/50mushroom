@@ -59,48 +59,12 @@ $this->load->view('joinpage');
        
    }
 
-    public function login()
-	{
-        if($this->session->userdata('company_id'))
-        {
-            $this->load->view("companypanel/indexcompany");
-
-        }
-
-        else{
-		$loginfo = $this->input->post(null, true);
-
-		$email = $loginfo['email'];
-        $password = $loginfo['password'];
-        $this->load->model("Company_Model");
-		$result = $this->Company_Model->login($email, $password);
-		if ($result) {
-			$this->session->set_userdata('company_id', $result['id']);
-			$this->session->set_userdata('company_name', $result['company_name']);
-            $this->load->view("companypanel/indexcompany");
-			
-        } 
-        else {
-			$error['logerror'] = "Wrong password or email";
-			$this->load->view('joinpage', $error);
-        }
-    }
-	}
-
-        
-
-    
-
-    //////// Login/Register Page /////////////
-  
-
-
     public function register()
     {
         $regInfo=$this->input->post(null, true);
         $this->load->library("form_validation");
         $this->form_validation->set_rules("name", "Company Name", "trim|required|alpha");
-        $this->form_validation->set_rules("email", "email", "trim|required");
+        $this->form_validation->set_rules("email", "email", "trim|required|min_length[4]|max_length[50]|valid_email");
         $this->form_validation->set_rules("password", "password", "trim|required|min_length[6]");
         $this->form_validation->set_rules("confirmPassword", "Confirm Password", "required|matches[password]");
     
@@ -113,13 +77,31 @@ $this->load->view('joinpage');
     
         else 
         {
-        $this->load->model('Company_Model');
-        $this->Company_Model->insertCompany($regInfo);
-        $message='You are successfully registirated, Please Login';
-        $this->load->view('joinpage', array('errors' => $message));
+        $name=$this->input->post('name', true);
+        $email=$this->input->post('email', true);
+        $password=$this->input->post('password', true);
+        $salt=sha1(openssl_random_pseudo_bytes(22));
+        $encrypted_password = sha1($password . '' . $salt);
+        $query=array(
+            'company_name' => $name,
+            'email' => $email,
+            'password' => $encrypted_password,
+            'salt_data' => $salt
+        );
+        $this->load->model('company_Model');
+        $add_user=$this->company_Model->add_user($query);
+        if($add_user){
+            $message['success'] = "You are registered";       
+            $this->load->view('joinpage', $message);
+            } else{
+                $error['error'] = validation_errors();
+                $this->load->view('joinpage', $error); 
+            }
         }
     }
- 
+    
+   
+  
     ////////////// Login /////////////////
     
     
@@ -128,7 +110,28 @@ $this->load->view('joinpage');
  
  
     ////////////// Login /////////////////
-    
+    public function login()
+   {
+       $email_login = $this->input->post('email', true);
+       $password_login = $this->input->post('password', true);
+       $this->load->model('company_Model');
+       $user = $this->company_Model->get_user_by_email($email_login);
+       $encrypted_password = sha1($password_login . '' . $user['salt_data']);
+       if ($user && $user['password'] == $encrypted_password) {
+           $user1 = array(
+               'id' => $user['id'],
+               'email' => $user['email'],
+               'company_name' => $user['company_name'],
+               
+           );
+           $this->session->set_userdata($user1);
+           $this->load->view('companypanel/indexcompany', $user1);
+
+       } else {
+           $error['logerror'] = "Wrong password or email";
+           $this->load->view('companypanel/indexcompany', $error);
+       }
+   }
 
 
     public function readpost()
@@ -140,6 +143,15 @@ $this->load->view('joinpage');
     } 
 
 
+
+
+    
+    ///////////////// END OF THE CLASS////////////////////////
+
+ 
+ 
+    ////////////// Login /////////////////
+    
 
 
 
