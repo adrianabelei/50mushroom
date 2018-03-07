@@ -23,12 +23,12 @@ class CompanyProcess extends CI_Controller
 public function logout()
 {
     session_destroy();
-    $this->load->view("joinpage");
+    $this->login;
 }
 
     public function contact()
     {
-        $this->load->view('login');
+        $this->load->view("companypanel/indexcompany");
     }
         
     

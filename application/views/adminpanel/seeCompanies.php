@@ -37,9 +37,9 @@
                    <thead>
                     <tr>
                         
-                        <th class="hidden-phone">Campany Name</th>
+                        <th class="hidden-phone">Company Name</th>
                         <th class="hidden-phone">Email</th>
-                        <th class="hidden-phone">Adress</th>
+                        <th class="hidden-phone">Address</th>
                         <th class="hidden-phone">Details</th>
                         <th></th>
                     </tr>

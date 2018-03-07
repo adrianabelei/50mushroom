@@ -62,6 +62,7 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
 <?php 
 }
 ?>
+                   
                     <li>
                         <a href="admin.php"><i class="fa fa-table "></i>Admin access </a>
                     </li>
@@ -106,10 +107,11 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
                       <div class="div-square">
                            <a href=" " >
 
- <i class="fa fa-lightbulb-o fa-5x"></i>
+            <i class="fa fa-lightbulb-o fa-5x"></i>
                       <h4>See Posts</h4>
 
                       </a>
+<<<<<<< HEAD
                       </div>
 </div>
                      
@@ -139,6 +141,21 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
 
                          
     </div>
+=======
+                      </div>                         
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+>>>>>>> 24621c272fca21c6dd76c638e6adb1c6606468d8
 
              <!-- /. PAGE INNER  -->
     </div>

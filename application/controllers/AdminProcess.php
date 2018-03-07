@@ -12,10 +12,13 @@ class AdminProcess extends CI_Controller
     }
 
     public function index()
-    {
-       
+    {if ($this->session->userdata('id_superAdmin') || $this->session->userdata('id_admin'))
+       {
+           $this->load->view('adminpanel/users');
+       }
+       else{
         $this->load->view('adminpanel/adminlogin'); 
-        
+       }
     }
 
 
@@ -85,6 +88,15 @@ public function seeUser()
     $this->load->model("Admin_Model");
     $result['results']=$this->Admin_Model->readCompanies();
     $this->load->view("adminpanel/seeCompanies",$result);
+}
+
+
+public function detailsCompany($id)
+{
+    $this->load->model("Admin_Model");
+    $result['results']=$this->Admin_Model->companiesOneRead($id);
+     $this->load->view("adminpanel/detailsCompany",$result);
+    
 }
 
 

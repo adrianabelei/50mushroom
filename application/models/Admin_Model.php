@@ -32,6 +32,18 @@ class Admin_Model extends CI_Model
 
 
 
+    public function companiesOneRead($id)
+    {
+        $myquery = "SELECT * FROM companies WHERE id=? ";
+        $values = array("$id");
+        return $this->db->query($myquery, $values)->row_array();
+    }
+
+
+
+
+
+
 
 
 
