@@ -73,6 +73,7 @@ $route['adminwsq'] = 'AdminProcess/index';
 $route['seeUser']='AdminProcess/seeUser';
 $route['login_admin'] = 'AdminProcess/login';
 $route['logout'] = 'AdminProcess/logout';
+$route['detailsCompany/(:any)'] = 'AdminProcess/detailsCompany/$1';
 $route['panel'] = 'Adminprocess/bringadminpanel';
 $route['companytwq']='Adminprocess/company';
 $route['managepost']='Adminprocess/managepost';
