@@ -17,16 +17,21 @@ class CompanyProcess extends CI_Controller
          $this->load->model('Company_Model');
          $result['results']=$this->Company_Model->postsread();
           $this->load->view("index",$result);
-
-        
-        
     }
+
 
 public function logout()
 {
     session_destroy();
     $this->load->view("joinpage");
 }
+
+    public function contact()
+    {
+        $this->load->view('page-contact');
+    }
+        
+    
 
     //////// Login/Register Page /////////////
     public function joinpage()
