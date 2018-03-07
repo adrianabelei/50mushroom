@@ -28,7 +28,7 @@ public function logout()
 
     public function contact()
     {
-        $this->load->view('page-contact');
+        $this->load->view('login');
     }
         
     
