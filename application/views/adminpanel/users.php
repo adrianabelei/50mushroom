@@ -104,16 +104,42 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
                      </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
-                           <a href="manageposts.php" >
+                           <a href=" " >
 
  <i class="fa fa-lightbulb-o fa-5x"></i>
                       <h4>See Posts</h4>
 
                       </a>
                       </div>
+</div>
+                     
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                      <div class="div-square">
+                           <a href=" " >
+
+                    <i class="fa fa-circle-o-notch fa-5x"></i>
+                      <h4>Superadmin Access</h4>
+
+                   
+                      </a>
+                      </div>
 
                          
     </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                      <div class="div-square">
+                           <a href=" " >
+
+                    <i class="fa fa-circle-o-notch fa-5x"></i>
+                      <h4>Rejected Posts</h4>
+
+                   
+                      </a>
+                      </div>
+
+                         
+    </div>
+
              <!-- /. PAGE INNER  -->
     </div>
          <!-- /. PAGE WRAPPER  -->

@@ -168,6 +168,7 @@ $this->load->view('joinpage');
 function addpost()
     {
         $postform = $this->input->post(null, true);
+        
         $image=$_FILES['image']['name'];
         $this->load->model('company_Model');
         $this->company_Model->addPost($postform,$image);

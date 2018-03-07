@@ -20,33 +20,6 @@ class AdminProcess extends CI_Controller
 
 
 
-
-
-        function company()
-        {
-            $this->load->view("adminpanel/indexcompany");
-        }
-         function managepost()
-         {
-            $this->load->view("adminpanel/manageposts");
-         }
-
-         function superaccess()
-         {
-            $this->load->view("adminpanel/adminpanel");
-         }
-
-        public function addsuperuser()
-        {
-
-        }
-
-        public function adduser()
-        {
-
-        }
-
-
     
 //////////////////// login SuperAdmin and Admin////////////////
     public function login()
