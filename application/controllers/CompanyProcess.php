@@ -13,10 +13,10 @@ class CompanyProcess extends CI_Controller
     
    public function index()
      {
-     //// if (isset($_SESSION['company_id']))
-        ////  $this->load->model('company_Model');
-        ////  $result['results']=$this->company_Model->postsread();
-          $this->load->view("index");
+      
+         $this->load->model('Company_Model');
+         $result['results']=$this->Company_Model->postsread();
+          $this->load->view("index",$result);
 
         
         
@@ -96,16 +96,43 @@ class CompanyProcess extends CI_Controller
     $this->load->view("adminpanel/manageposts");
  }
 
-function companyaddpost()
+function addpost()
     {
         $postform = $this->input->post(null, true);
+        $image=$_FILES['image']['name'];
         $this->load->model('company_Model');
-        $this->company_Model->addPost($postform['title'], $_SESSION['id']);
-        $posts = $this->company_Model->takePost();
-        $this->load->view('adminpanel/manageposts', ['posts' => $posts]);
+        $this->company_Model->addPost($postform,$image);
+        $config['upload_path']= 'uploads/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $this->load->library('upload', $config);
+        if ( ! $this->upload->do_upload('image'))
+                {
+                    $data=0;
+                        
+                }
+                else
+                {
+                        $data = array('upload_data' => $this->upload->data());
+
+                }
+       
+        $this->load->view('adminpanel/manageposts');
+        
+    }
+
+    function detailpost($id)
+    {
+
+                $this->load->model('Company_Model');
+                $result['results']=$this->Company_Model->postsOneRead($id);
+                $this->load->view('show',$result);
+
+
     }
  
 }
+
+
 
 
 

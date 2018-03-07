@@ -15,13 +15,22 @@ class Company_Model extends CI_Model
 	{	
         $query = "SELECT * from posts ";
         return $this->db->query($query)->result_array();
-	}
-    public function addPost($arg)
+    }
+    
+
+    public function postsOneRead($id)
     {
-        $query="INSERT INTO posts(title, description, link, image, tag, fiiled_position, vacancies, companies_id) VALUES (?,?,?,?,?,?,?,?)";
-        $values =[$arg['title'], $arg['description'], $arg['link'], $arg['image'], $arg['tag'], $arg['fiiled_position'], $arg['vacancies'], $_SESSION['company_id']];
+        $myquery = "SELECT * FROM posts WHERE id=? ";
+        $values = array("$id");
+        return $this->db->query($myquery, $values)->row_array();
+    }
+
+    public function addPost($arg,$image)
+    {
+        $query="INSERT INTO posts (title, description, link, image, tag,fiiledposition , vacancies, companies_id) VALUES (?,?,?,?,?,?,?,?)";
+        $values =[$arg['title'], $arg['description'], $arg['link'],$image, $arg['tag'], $arg['fiiled_position'], $arg['vacancies'], $_SESSION['company_id']];
         $this->db->query($query, $values);
-        redirect('/');
+        
     }
     public function takePost()
     {

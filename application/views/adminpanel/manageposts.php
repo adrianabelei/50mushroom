@@ -35,7 +35,7 @@
                         </div>
 
  
- <form action="/addpost" method="POST">
+ <form action="/addpost" method="POST" enctype="multipart/form-data">
   <div class="form-group">
     <label for="exampleTextarea">Post</label>
     <textarea name = "title" class="form-control" id="exampleTextarea" rows="1" placeholder="Title"></textarea><br>
@@ -95,9 +95,7 @@
 
   <br><br><br>
 
-<button type="button" class="btn btn-secondary btn-sm">Add</button>
-<button type="button" class="btn btn-secondary btn-sm">Approve</button>
-<button type="button" class="btn btn-secondary btn-sm">Reject</button>
+<button type="submit" class="btn btn-secondary btn-sm">Add</button>
 <br><br>
 
 
