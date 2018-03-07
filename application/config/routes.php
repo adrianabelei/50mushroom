@@ -57,12 +57,11 @@ $route['companytwq']='Companyprocess/company';
 $route['managepost']='Companyprocess/managepost';
 $route['addpost']='Companyprocess/addpost';
 $route['detailpost/(:any)'] = 'Companyprocess/detailpost/$1';;
-
-
 $route['login'] = 'CompanyProcess/login';
 $route['show'] = 'Companyprocess/readpost';
-$route['adminwsq'] = 'Adminprocess/index';
-$route['dashboard'] = 'Adminprocess/loginadmin';
+$route['adminwsq'] = 'AdminProcess/index';
+$route['login_admin'] = 'AdminProcess/login';
+$route['logout'] = 'AdminProcess/logout';
 $route['panel'] = 'Adminprocess/bringadminpanel';
 $route['companytwq']='Adminprocess/company';
 $route['managepost']='Adminprocess/managepost';

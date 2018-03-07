@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Users Panel</title>
 	<!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>assets/adminpanel/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>assets/adminpanel/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="<?php echo base_url(); ?>assets/adminpanel/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
@@ -32,28 +32,40 @@
                 </div>
               
                  <span class="logout-spn" >
-                  <a href="#" style="color:#fff;">LOGOUT</a>  
+                  <a href="/logout" style="color:#fff;">LOGOUT</a>  
 
                 </span>
             </div>
         </div>
         <!-- /. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
+        <?php 
+if(null !==($this->session->userdata('id_admin')) && null !==($this->session->userdata('email_admin')))
+{
+    echo '<center><h1>Hello :'.$this->session->userdata('email_admin').'</h1></center>';
+}
+?>
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                  
+                <?php 
+if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->session->userdata('email_superAdmin')))
+{
+    echo '<center><h1>Hello :'.$this->session->userdata('email_superAdmin').'</h1></center>';
 
- <li >
+?>
+
+                     <li >
                         <a href="indexadminpanel.php" ><i class="fa fa-desktop "></i>Dashboard </a>
                     </li>
                    
-
+<?php 
+}
+?>
                     <li>
                         <a href="admin.php"><i class="fa fa-table "></i>Admin access </a>
                     </li>
-                    <li class="active-link">
-                        <a href="users.php"><i class="fa fa-edit "></i>Users access </a>
-                    </li>
+                    
 
 
                 </ul>
@@ -81,7 +93,7 @@
                       <div class="div-square">
                            <a href="manageuser.php" >
  <i class="fa fa-circle-o-notch fa-5x"></i>
-                      <h4>Company Profile</h4>
+                      <h4>See Users</h4>
                       </a>
                       </div>
 
@@ -91,7 +103,7 @@
                       <div class="div-square">
                            <a href="manageposts.php" >
  <i class="fa fa-lightbulb-o fa-5x"></i>
-                      <h4>Manage posts</h4>
+                      <h4>See Posts</h4>
                       </a>
                       </div>
 
