@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTROL PANEL</title>
 	<!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/adminpanel/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/adminpanel/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/adminpanel/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
@@ -32,24 +32,27 @@
                 <thead>
                     <tr>
                         
-                        <th class="hidden-phone">Company name</th>
-                        <th class="hidden-phone">Email</th>
-                        <th class="hidden-phone">Phone</th>
-                        <th class="hidden-phone">Address</th>
-                        <th class="hidden-phone">Password</th>
+                        <th class="hidden-phone">title</th>
+                        <th class="hidden-phone">tag</th>
+                        <th class="hidden-phone">date</th>
+                        <th class="hidden-phone">details</th>
                         <th></th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    
+                    <?php foreach ($results as $item ) {
+                        # code...
+                    ?>
                     <tr>
                         
-                        <td ></td>
-                        <td></td>
-                        <td></td>
-                        <td ></td>
-                        <td ></td>
+                        <td ><?=$item['title'] ?></td>
+                        <td><?=$item['tag'] ?></td>
+                        <td><?=$item['created_at'] ?></td>
+                        
+                        <td > <span class="project-details"><a href="detailpost/<?= $item['id'] ?>">details</span></td>
+
+                    <?php } ?>
 
 <div class="form-group">
    

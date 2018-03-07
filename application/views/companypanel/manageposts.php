@@ -58,13 +58,13 @@
 </div>
       
 
-<div class="form-group">
+<!-- <div class="form-group" name="higlighted">
     <label for="exampleSelect1">Type of content</label>
     <select class="form-control" id="exampleSelect1">
     <option>Highlighted content</option>
       <option>Standard content</option>
       </select>
-      </div>
+      </div> -->
      
 
   <div class="form-group">

@@ -92,18 +92,28 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
                            <a href="manageuser.php" >
+<<<<<<< HEAD
  <i class="fa fa-circle-o-notch fa-5x"></i>
                       <h4>See Users</h4>
+=======
+                    <i class="fa fa-circle-o-notch fa-5x"></i>
+                      <h4>Company Profile</h4>
+>>>>>>> db2a57d11e55582b300b0fec15c838e207176e67
                       </a>
                       </div>
 
 
- </div>
+                     </div>
                   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
                            <a href="manageposts.php" >
+<<<<<<< HEAD
  <i class="fa fa-lightbulb-o fa-5x"></i>
                       <h4>See Posts</h4>
+=======
+                    <i class="fa fa-lightbulb-o fa-5x"></i>
+                      <h4>Manage posts</h4>
+>>>>>>> db2a57d11e55582b300b0fec15c838e207176e67
                       </a>
                       </div>
 

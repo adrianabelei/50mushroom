@@ -25,9 +25,22 @@ class Company_Model extends CI_Model
         return $this->db->query($myquery, $values)->row_array();
     }
 
+
+    public function login($email, $password)
+    {
+        $myquery = "SELECT * FROM companies WHERE email=? AND password = ? ";
+        $values = array("$email", "$password");
+        $query = $this->db->query($myquery, $values)->row_array();
+        if ($query) {
+            return $query;
+        } else {
+            return false;
+        }
+    }
+
     public function addPost($arg,$image)
     {
-        $query="INSERT INTO posts (title, description, link, image, tag,fiiledposition , vacancies, companies_id) VALUES (?,?,?,?,?,?,?,?)";
+        $query="INSERT INTO posts (title, description, link, image, tag,fiiled_position , vacancies, companies_id) VALUES (?,?,?,?,?,?,?,?)";
         $values =[$arg['title'], $arg['description'], $arg['link'],$image, $arg['tag'], $arg['fiiled_position'], $arg['vacancies'], $_SESSION['company_id']];
         $this->db->query($query, $values);
         

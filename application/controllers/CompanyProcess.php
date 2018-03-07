@@ -28,6 +28,34 @@ class CompanyProcess extends CI_Controller
     }
    
 
+    public function login()
+	{
+        if($this->session->userdata('company_id'))
+        {
+            $this->load->view("companypanel/indexcompany");
+
+        }
+
+        else{
+		$loginfo = $this->input->post(null, true);
+
+		$email = $loginfo['email'];
+        $password = $loginfo['password'];
+        $this->load->model("Company_Model");
+		$result = $this->Company_Model->login($email, $password);
+		if ($result) {
+			$this->session->set_userdata('company_id', $result['id']);
+			$this->session->set_userdata('company_name', $result['company_name']);
+            $this->load->view("companypanel/indexcompany");
+			
+        } 
+        else {
+			$error['logerror'] = "Wrong password or email";
+			$this->load->view('joinpage', $error);
+        }
+    }
+	}
+
         
 
     
@@ -88,13 +116,10 @@ class CompanyProcess extends CI_Controller
 
  function company()
 {
-    $this->load->view("adminpanel/indexcompany");
+    $this->load->view("companypanel/indexcompany");
 }
 
- function managepost()
- {
-    $this->load->view("adminpanel/manageposts");
- }
+ 
 
 function addpost()
     {
@@ -106,6 +131,7 @@ function addpost()
         $config['allowed_types'] = 'gif|jpg|png';
         $this->load->library('upload', $config);
         if ( ! $this->upload->do_upload('image'))
+
                 {
                     $data=0;
                         
@@ -116,8 +142,13 @@ function addpost()
 
                 }
        
-        $this->load->view('adminpanel/manageposts');
+        $this->load->view('companypanel/manageposts');
         
+    }
+
+    public function manage()
+    {
+        $this->load->view('companypanel/manageposts');
     }
 
     function detailpost($id)
@@ -127,6 +158,15 @@ function addpost()
                 $result['results']=$this->Company_Model->postsOneRead($id);
                 $this->load->view('show',$result);
 
+
+    }
+
+
+    public function seeposts()
+    {
+        $this->load->model('Company_Model');
+        $result['results']=$this->Company_Model->postsread();
+        $this->load->view("companypanel/seeposts",$result);;
 
     }
  
