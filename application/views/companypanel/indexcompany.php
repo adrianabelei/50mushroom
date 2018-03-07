@@ -46,7 +46,7 @@
 
 
                         <li class="active-link">
-                            <a href="indexadminpanel.php" ><i class="fa fa-desktop "></i>Dashboard</a>
+                            <a href="login" ><i class="fa fa-desktop "></i>Dashboard</a>
                         </li>
 
 
@@ -83,20 +83,46 @@
 
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                             <div class="div-square">
-                                <a href="manageuser.php" >
+                                <a href="manage" >
+                                    <i class="fa fa-envelope-o fa-5x"></i>
+                                    <h4>Company Edit</h4>
+                                </a>
+                            </div>
+                            </div>
+                            
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <div class="div-square">
+                                <a href="manage" >
                                     <i class="fa fa-envelope-o fa-5x"></i>
                                     <h4>Company Details</h4>
                                 </a>
                             </div>
+                            </div>
 
 
-                        </div>
+                        
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                             <div class="div-square">
-                                <a href="managepost" >
+                                <a href="manage" >
                                     <i class="fa fa-lightbulb-o fa-5x"></i>
-                                    <h4>Manage posts</h4>
+                                    <h4>add posts</h4>
                                 </a>
+                            </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                            <div class="div-square">
+                                <a href="manage" >
+                                    <i class="fa fa-lightbulb-o fa-5x"></i>
+                                    <h4>See Posts </h4>
+                                </a>
+                            </div>
+                            </div>
+
+
+
+
                             </div>
 
 
