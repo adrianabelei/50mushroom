@@ -78,8 +78,10 @@ $route['admineditpage']='Adminprocess/admineditpage';
 $route['editoneadmin']='Adminprocess/editoneadmin';
 
 
+$route['editonecompany1']='AdminProcess/editonecompany1';
 $route['login_admin'] = 'AdminProcess/login';
 $route['editCompany/(:any)'] = 'AdminProcess/editCompany/$1';
+$route['deleteCompany/(:any)'] = 'AdminProcess/deleteCompany/$1';
 $route['logout'] = 'AdminProcess/logout';
 $route['detailsCompany/(:any)'] = 'AdminProcess/detailsCompany/$1';
 $route['panel'] = 'Adminprocess/bringadminpanel';

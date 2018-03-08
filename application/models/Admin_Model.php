@@ -36,6 +36,13 @@ class Admin_Model extends CI_Model
         return $this->db->query($myquery, $values);
     }
 
+     public function deleteonecompany($id)
+    {
+        $myquery = "DELETE FROM companies WHERE id=?;";
+        $values = array($id);
+        return $this->db->query($myquery, $values);
+    }
+
 
     function readAdmin()
     {

@@ -53,7 +53,7 @@
                    <?php
                     if ($results){
                    foreach ($results as $item ) {
-                                if ($item['isdecided']==1){
+                                if ($item['isdecided']!=1){
 
                                                     # code...
                     ?>
@@ -64,7 +64,7 @@
                         <td><?=$item['adress'] ?></td>
                          <td > <span class="project-details"><a href="deleteCompany/<?= $item['id'] ?>">Delete</span></td>
 
-                        <td > <span class="project-details"><a href="detailsCompany/<?= $item['id'] ?>">Click_me</span></td>
+                        <td > <span class="project-details"><a href="detailsCompany/<?= $item['id'] ?>">approv</span></td>
                         </tr>   
                     <?php
                                 }  

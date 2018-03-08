@@ -35,7 +35,7 @@
                         </div>
 
  
- <form action="/editonecompany" method="POST" enctype="multipart/form-data">
+ <form action="/editonecompany1" method="POST" enctype="multipart/form-data">
   <div class="form-group">
     <label for="exampleTextarea">Company Name</label>
     <textarea name = "company_name" class="form-control" id="exampleTextarea" rows="1" placeholder="Name"></textarea><br>
@@ -44,8 +44,7 @@
   <div class="form-group row">
   <div class="col-10">
   <label for="example-number-input" class="col-2 col-form-label">Email</label>
- 
-    <textarea name = "password" class="form-control" id="exampleTextarea" rows="1" placeholder="password"></textarea><br>
+    <textarea name = "email" class="form-control" id="exampleTextarea" rows="1" placeholder="Email"></textarea><br>
    <label for="exampleInputFile">Upload Logo</label>
     <input type="file" name="image" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
   </div>
@@ -63,7 +62,7 @@
   <br><br><br>
 
 <button type="submit" class="btn btn-secondary btn-sm">Add</button>
-<a href="login" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
+<a href="/login_admin" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
 <br><br>
 
 

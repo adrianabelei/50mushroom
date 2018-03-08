@@ -92,16 +92,52 @@ public function seeUser()
 
 
 public function detailsCompany($id)
-{
+{   
+   
     $this->load->model("Admin_Model");
     $result['results']=$this->Admin_Model->companiesOneRead($id);
-     $this->load->view("adminpanel/detailsCompany",$result);
+    $this->load->view("adminpanel/detailsCompany",$result);
     
 }
 
-public function editCompany(Type $var = null)
+public function editCompany($id)
 {
-    # code...
+    $this->session->set_userdata('company_updated_id', $id);
+    $this->load->view("adminpanel/editCompany");
+
+
+}
+
+public function editonecompany1()
+{
+      $result=$this->input->post(null,false);
+        $image=$_FILES['image']['name'];
+        $id=$this->session->userdata('company_updated_id');
+        $this->load->model("Admin_Model");
+        $result2=$this->Admin_Model->editonecompany($result,$id,$image);
+        $config['upload_path']= 'uploads/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $this->load->library('upload', $config);
+        if ( ! $this->upload->do_upload('image'))
+
+                {
+                    $data=0;
+                        
+                }
+                else
+                {
+                        
+
+                }
+                $this->load->view('adminpanel/users');
+    
+}
+
+function deleteCompany($id)
+{  
+     $this->load->model("Admin_Model");
+    $result2=$this->Admin_Model->deleteonecompany($id);
+    redirect('http://localhost/seeUser');
 }
 
 
