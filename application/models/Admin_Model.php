@@ -23,14 +23,24 @@ class Admin_Model extends CI_Model
         return $checker_admin;
     }
 
-
      function readCompanies()
 	{	
         $query = "SELECT * from companies ";
         return $this->db->query($query)->result_array();
     }
 
+    function readAdmin()
+    {
+        $query="SELECT * from admins";
+        return $this->db->query($query)->result_array();
+    }
 
+    public function editoneadmin($result,$id)
+    {
+        $myquery = "UPDATE admins SET first_name =?, last_name =?, email=?, password=?   WHERE id=?";
+        $values = array($result['first_name'], $result['last_name'], $result['email'],$result['password'], $id);
+        return $this->db->query($myquery, $values);
+    }
 
     public function companiesOneRead($id)
     {
