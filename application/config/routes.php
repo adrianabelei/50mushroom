@@ -71,6 +71,11 @@ $route['login'] = 'CompanyProcess/login';
 $route['show'] = 'Companyprocess/readpost';
 $route['adminwsq'] = 'AdminProcess/index';
 $route['seeUser']='AdminProcess/seeUser';
+$route['seeAdmin']='AdminProcess/seeAdmin';
+$route['admineditpage']='Adminprocess/admineditpage';
+$route['editoneadmin']='Adminprocess/editoneadmin';
+
+
 $route['login_admin'] = 'AdminProcess/login';
 $route['logout'] = 'AdminProcess/logout';
 $route['panel'] = 'Adminprocess/bringadminpanel';
