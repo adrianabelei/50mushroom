@@ -45,7 +45,7 @@
   <div class="col-10">
   <label for="example-number-input" class="col-2 col-form-label">Email</label>
  
-    <textarea name = "password" class="form-control" id="exampleTextarea" rows="1" placeholder="password"></textarea><br>
+    <textarea name = "email" class="form-control" id="exampleTextarea" rows="1" placeholder="Email"></textarea><br>
    <label for="exampleInputFile">Upload Logo</label>
     <input type="file" name="image" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
   </div>

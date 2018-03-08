@@ -86,7 +86,7 @@ $(document).ready(function () {
             
             <ul class="nav">
             <li class="dropdown active">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="index">Home <b class="caret"></b></a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="homepage">Home <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="index.htm">Full Page</a></li>
                     <li><a href="index-gallery.htm">Gallery Only</a></li>
@@ -224,7 +224,7 @@ $(document).ready(function () {
                     <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="<?php echo base_url(); ?>assets/img/gallery/gallery-img-1-full.jpg" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="<?php echo base_url(); ?>uploads/<?= $item['image'] ?>" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="detailpost/<?= $item['id'] ?>" class="item-details-link"></a>
                             </span>
                         </span>

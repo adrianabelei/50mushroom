@@ -16,19 +16,19 @@ class CompanyProcess extends CI_Controller
       
          $this->load->model('Company_Model');
          $result['results']=$this->Company_Model->postsread();
-          $this->load->view("index",$result);
+         $this->load->view("index",$result);
     }
 
 
 public function logout()
 {
     session_destroy();
-    $this->login;
+    redirect("http://localhost");
 }
 
     public function contact()
     {
-        $this->load->view("companypanel/indexcompany");
+        $this->load->view("page-contact");
     }
         
     
@@ -54,7 +54,6 @@ $this->load->view('joinpage');
    {
         $this->load->model('Company_Model');
          $result['results']=$this->Company_Model->companydetail();
-         var_dump($result);
           $this->load->view("companypanel/companydetail",$result);
        
    }
@@ -112,12 +111,32 @@ $this->load->view('joinpage');
     ////////////// Login /////////////////
     public function login()
    {
-       $email_login = $this->input->post('email', true);
-       $password_login = $this->input->post('password', true);
+
+    
+    if($this->session->userdata('company_id'))
+
+    {
+        $this->load->view('companypanel/indexcompany');
+
+    }    
+    
+    else{
+
+        
+
+
+       $result =$this->input->post(null, false);
+       $email_login=$result['email'];
+       $password_login=$result['password'];
+    
+
+
        $this->load->model('company_Model');
        $user = $this->company_Model->get_user_by_email($email_login);
+       var_dump($user);
+       $this->session->set_userdata('company_id',$user['id']);
        $encrypted_password = sha1($password_login . '' . $user['salt_data']);
-       if ($user && $user['password'] == $encrypted_password) {
+       if ($user && ($user['password'] == $encrypted_password)) {
            $user1 = array(
                'id' => $user['id'],
                'email' => $user['email'],
@@ -125,13 +144,16 @@ $this->load->view('joinpage');
                
            );
            $this->session->set_userdata($user1);
-           $this->session->set_userdata('company_id',$user1['id']);
-           $this->load->view('companypanel/indexcompany', $user1);
+           
+           
+
+           
 
        } else {
            $error['logerror'] = "Wrong password or email";
-           $this->load->view('companypanel/indexcompany', $error);
+           $this->load->view('joinpage', $error);
        }
+    }
    }
 
 
@@ -140,23 +162,14 @@ $this->load->view('joinpage');
     {
         $this->load->model('company_Model');
         $result=$this->company_Model->postsread();
-        var_dump($result);
+        
     } 
 
-
-
-
-    
-    ///////////////// END OF THE CLASS////////////////////////
-
- 
- 
-    ////////////// Login /////////////////
     
 
 
 
-    ///////////////// END OF THE CLASS////////////////////////
+   
 
  function company()
 {
@@ -167,34 +180,52 @@ $this->load->view('joinpage');
 
 function addpost()
     {
+
         $postform = $this->input->post(null, true);
+        $this->load->library("form_validation");
+        $this->form_validation->set_rules("title", "TITLE", "trim|required|alpha|max_length[225]");
+        $this->form_validation->set_rules("description", "Description", "trim|required|max_length[500]");
+        // $this->form_validation->set_rules("image", "image", "trim|required");
+        $this->form_validation->set_rules("link", "Link", "trim|required");
+        $this->form_validation->set_rules("tag", "Tags", "required");
+        $this->form_validation->set_rules("fiiled_position", "Fiiled Position", "required");
         
+        if ($this->form_validation->run() == FALSE)
+        {
+        $validationError = validation_errors();
+        $this->load->view('companypanel/manageposts', array('error_post' => $validationError));
+        }
+        
+        else 
+        {
         $image=$_FILES['image']['name'];
         $this->load->model('company_Model');
         $this->company_Model->addPost($postform,$image);
         $config['upload_path']= 'uploads/';
         $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size'] = '8';
+
         $this->load->library('upload', $config);
+
         if ( ! $this->upload->do_upload('image'))
+        {
+         $data=0;               
+        }
 
-                {
-                    $data=0;
-                        
-                }
-                else
-                {
-                        $data = array('upload_data' => $this->upload->data());
-
-                }
-       
-        $this->load->view('companypanel/manageposts');
-        
+        else
+        {
+         $data = array('upload_data' => $this->upload->data());
+        }
+       $this->load->view('companypanel/manageposts');
+    }   
     }
+
 
     public function manage()
     {
         $this->load->view('companypanel/manageposts');
     }
+    
 
     function detailpost($id)
     {
@@ -241,7 +272,9 @@ function addpost()
     }
 
 public function editonecompany()
-{       $result=$this->input->post(null,false);
+{      
+    
+        $result=$this->input->post(null,false);
         $image=$_FILES['image']['name'];
         $id=$this->session->userdata('company_id');
         $this->load->model("Company_Model");
@@ -295,12 +328,41 @@ public function editonecompany()
 
     }
 
+    public function email()
+    {
+$email=$this->input->post(null, true);
 
- 
+
+$config['protocol'] = 'sendmail';
+$config['mailpath'] = '/usr/sbin/sendmail';
+$config['charset'] = 'iso-8859-1';
+$config['wordwrap'] = TRUE;
+
+$this->email->initialize($config);
+
+$this->load->library('email');
+
+$this->email->from('aboudmourad@hotmail.com', 'abboud');
+$this->email->to('aboudmourad88@gmail.com');
+$this->email->cc('aboudmourad@hotmail.com');
+$this->email->bcc('them@their-example.com');
+
+$this->email->subject('Email Test');
+$this->email->message('message');
+$this->email->set_newline("\r\n");
+$this->email->print_debugger();
+if($this->email->send())
+{
+   
 }
+else 
+{
+    
+}
+$this->load->view("page-contact");
+    }
 
-
-
-
-
+    
+  ///////////////// END OF THE CLASS////////////////////////
+}
 ?>

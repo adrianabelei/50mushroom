@@ -26,13 +26,7 @@
 
 
 <body>
-<div style="color:red">
-<?php if(isset($error_post)){
-            echo $error_post;
-           
-        }
-         ?>
-         </div>
+  
  <hr />
                 <div class="row">
                     <div class="col-lg-12 ">
@@ -41,10 +35,10 @@
                         </div>
 
  
- <form action="/addpost" method="POST" enctype="multipart/form-data">
+ <form action="/editpost1" method="POST" enctype="multipart/form-data">
   <div class="form-group">
     <label for="exampleTextarea">Post</label>
-    <textarea name ="title" class="form-control" id="exampleTextarea" rows="1" placeholder="Title"></textarea><br>
+    <textarea name = "title" class="form-control" id="exampleTextarea" rows="1" placeholder="Title"></textarea><br>
 
     <textarea name ="description" class="form-control" id="exampleTextarea" rows="4" placeholder="Description"></textarea><br>
     <div class="form-group row">
@@ -101,8 +95,7 @@
 
   <br><br><br>
 
-<button type="submit" class="btn btn-secondary btn-sm">Add</button>
-<a href="login" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
+<input  type="submit" class="btn btn-secondary btn-sm"></button>
 <br><br>
 
 
