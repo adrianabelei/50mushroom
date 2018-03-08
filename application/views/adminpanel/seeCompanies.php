@@ -19,7 +19,7 @@
 <hr />
                   
 
-<div class="row">
+<div class="row" style="margin-left:20px;" >
                     <div class="col-lg-12 ">
                         <div class="alert alert-warning">
                              <strong>Welcome USER  </strong> 
@@ -42,7 +42,7 @@
                         <th class="hidden-phone">Email</th>
                         <th class="hidden-phone">Address</th>
                         <th class="hidden-phone">Delete</th>
-
+                        <<th class="hidden-phone">Make Trusted</th>
                         <th class="hidden-phone">Details</th>
                         <th></th>
                     </tr>
@@ -63,7 +63,7 @@
                         <td><?=$item['email'] ?></td>
                         <td><?=$item['adress'] ?></td>
                          <td > <span class="project-details"><a href="deleteCompany/<?= $item['id'] ?>">Delete</span></td>
-
+                        <td > <span class="project-details"><a href="maketursted/<?= $item['id'] ?>">Make</span></td>
                         <td > <span class="project-details"><a href="detailsCompany/<?= $item['id'] ?>">Click_me</span></td>
                         </tr>   
                     <?php

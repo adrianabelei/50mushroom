@@ -82,6 +82,11 @@ $route['editonecompany1']='AdminProcess/editonecompany1';
 $route['login_admin'] = 'AdminProcess/login';
 $route['editCompany/(:any)'] = 'AdminProcess/editCompany/$1';
 $route['deleteCompany/(:any)'] = 'AdminProcess/deleteCompany/$1';
+$route['deleteCompany1/(:any)'] = 'AdminProcess/deleteCompany1/$1';
+$route['acceptCompany/(:any)'] = 'AdminProcess/acceptCompany/$1';
+$route['maketursted/(:any)'] = 'AdminProcess/maketursted/$1';
+
+$route['seeUnacppepted'] = 'AdminProcess/seeUnacppepted';
 $route['logout'] = 'AdminProcess/logout';
 $route['detailsCompany/(:any)'] = 'AdminProcess/detailsCompany/$1';
 $route['panel'] = 'Adminprocess/bringadminpanel';

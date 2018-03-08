@@ -36,6 +36,22 @@ class Admin_Model extends CI_Model
         return $this->db->query($myquery, $values);
     }
 
+     public function acceptCompany($id)
+    {
+        $myquery = "UPDATE companies SET  isdecided=?   WHERE id=?";
+        $values = array(1,$id);
+        return $this->db->query($myquery, $values);
+    }
+
+    
+public function maketursted($id)
+{
+        $myquery = "UPDATE companies SET  istrusted=?   WHERE id=?";
+        $values = array(1,$id);
+        return $this->db->query($myquery, $values);
+
+}
+
      public function deleteonecompany($id)
     {
         $myquery = "DELETE FROM companies WHERE id=?;";

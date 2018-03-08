@@ -19,7 +19,7 @@
 <hr />
                   
 
-<div class="row">
+<div class="row" style="margin-left:40px;">
                     <div class="col-lg-12 ">
                         <div class="alert alert-warning">
                              <strong>Welcome USER  </strong> 
@@ -42,7 +42,7 @@
                         <th class="hidden-phone">Email</th>
                         <th class="hidden-phone">Address</th>
                         <th class="hidden-phone">Delete</th>
-
+                        <th class="hidden-phone">Decide</th>
                         <th class="hidden-phone">Details</th>
                         <th></th>
                     </tr>
@@ -62,9 +62,9 @@
                         <td ><?=$item['company_name'] ?></td>
                         <td><?=$item['email'] ?></td>
                         <td><?=$item['adress'] ?></td>
-                         <td > <span class="project-details"><a href="deleteCompany/<?= $item['id'] ?>">Delete</span></td>
-
-                        <td > <span class="project-details"><a href="detailsCompany/<?= $item['id'] ?>">approv</span></td>
+                        <td> <span class="project-details"><a href="deleteCompany1/<?= $item['id'] ?>">Delete</span></td>
+                        <td> <span class="project-details"><a href="acceptCompany/<?= $item['id'] ?>">Accept</span></td>
+                        <td> <span class="project-details"><a href="detailsCompany/<?= $item['id'] ?>">Details</span></td>
                         </tr>   
                     <?php
                                 }  

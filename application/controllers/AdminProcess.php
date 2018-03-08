@@ -140,6 +140,36 @@ function deleteCompany($id)
     redirect('http://localhost/seeUser');
 }
 
+public function deleteCompany1($id)
+{
+    $this->load->model("Admin_Model");
+    $result2=$this->Admin_Model->deleteonecompany($id);
+    redirect('http://localhost/seeUnacppepted');
+}
+
+
+public function acceptCompany($id)
+{
+    $this->load->model("Admin_Model");
+    $result2=$this->Admin_Model->acceptCompany($id);
+    redirect('http://localhost/seeUnacppepted');
+    
+}
+
+public function maketursted($id)
+{
+    $this->load->model("Admin_Model");
+    $result2=$this->Admin_Model->maketursted($id);
+    redirect('http://localhost/seeUser');
+    
+}
+
+public function seeUnacppepted()
+{
+    $this->load->model("Admin_Model");
+    $result['results']=$this->Admin_Model->readCompanies();
+    $this->load->view("adminpanel/seeUnacceptedCompanies",$result);
+}
 
 
 
