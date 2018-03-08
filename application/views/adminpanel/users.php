@@ -163,29 +163,13 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
 
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                     <div class="div-square">
-                    <a href="superadminaccess.php" >
+                    <a href="addAdmin" >
                     <i class="fa fa-circle-o-notch fa-5x"></i>
                     <h4>Ad Admin</h4>
                       </a>
                       </div>                
                         </div>
 
-                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                    <div class="div-square">
-                    <a href="superadminaccess.php" >
-                    <i class="fa fa-circle-o-notch fa-5x"></i>
-                    <h4>Ad SuperAdmin</h4>
-                      </a>
-                      </div>                
-                        </div>
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                    <div class="div-square">
-                    <a href="superadminaccess.php" >
-                    <i class="fa fa-circle-o-notch fa-5x"></i>
-                    <h4>See SuperAdmins</h4>
-                      </a>
-                      </div>                
-                        </div>
 
             <?php } else{
 

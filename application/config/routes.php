@@ -80,6 +80,10 @@ $route['detailpostcompany2/(:any)']='AdminProcess/detailpostcompany2/$1';
 $route['deletepost1/(:any)']='AdminProcess/deletepost1/$1';
 $route['editonepost1/(:any)']='AdminProcess/editonepost1/$1';
 $route['seeUser']='AdminProcess/seeUser';
+$route['addAdmin']='AdminProcess/addAdmin';
+$route['addadmin1']='AdminProcess/addadmin1';
+
+
 $route['seeAdmin']='AdminProcess/seeAdmin';
 $route['admineditpage']='Adminprocess/admineditpage';
 $route['editoneadmin']='Adminprocess/editoneadmin';

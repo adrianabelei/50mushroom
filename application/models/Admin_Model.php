@@ -104,6 +104,17 @@ public function deleteoneAdmin($id)
         $values = array($id);
         return $this->db->query($myquery, $values);
 }
+
+
+
+public function addadmin1($result)
+{
+    $query ='INSERT INTO admins(first_name,last_name,email, password,superadmin_id)
+         VALUES (?,?,?,?,?)';
+         $id=$this->session->userdata("id_superAdmin");
+         $value=[$result['first_name'], $result['last_name'], $result['password'],$result['email'],$id];
+         $this->db->query($query, $value);
+}
     
 
 

@@ -125,6 +125,25 @@ public function detailsCompany($id)
 }
 
 
+public function addAdmin()
+{
+    $this->load->view("adminpanel/addadmin");
+}
+
+public function addadmin1()
+{
+    $result=$this->input->post(null,false);
+
+      $this->load->model("Admin_Model");
+        $this->Admin_Model->addadmin1($result);
+        redirect('http://localhost/addAdmin');
+
+
+
+
+}
+
+
 public function editadmin1()
 {
     $result=$this->input->post(null,false);
