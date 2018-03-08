@@ -106,7 +106,7 @@
                 <div class="mobile-nav-select">
                 <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                     <option value="">Navigate...</option>
-                    <option value="index.htm">Home</option>
+                    <option value="index"><a href="index">Home</a></option>
                         <option value="index.htm">- Full Page</option>
                         <option value="index-gallery.htm">- Gallery Only</option>
                         <option value="index-slider.htm">- Slider Only</option>
@@ -150,23 +150,28 @@
                 Well done! You successfully read this important alert message. 
             </div>
 
-            <form action="#" id="contact-form">
+            <form action="https://formspree.io/aboudmourad@hotmail.com" method="post" id="contact-form">
                 <div class="input-prepend">
                     <span class="add-on"><i class="icon-user"></i></span>
-                    <input class="span4" id="prependedInput" size="16" type="text" placeholder="Name">
+                    <input class="span4" name="name" id="prependedInput" size="16" type="text" placeholder="Name">
                 </div>
                 <div class="input-prepend">
                     <span class="add-on"><i class="icon-envelope"></i></span>
-                    <input class="span4" id="prependedInput" size="16" type="text" placeholder="Email Address">
+                    <input class="span4"name="email" id="prependedInput" size="16" type="text" placeholder="Email Address">
                 </div>
                 <div class="input-prepend">
                     <span class="add-on"><i class="icon-globe"></i></span>
-                    <input class="span4" id="prependedInput" size="16" type="text" placeholder="Website URL">
+                    <input class="span4" name="website" id="prependedInput" size="16" type="text" placeholder="Website URL">
                 </div>
-                <textarea class="span6"></textarea>
+                <textarea class="span6" name="message" ></textarea>
                 <div class="row">
                     <div class="span2">
+                        <input type="hidden" name="_next" value="http://localhost/contact">
                         <input type="submit" class="btn btn-inverse" value="Send Message">
+                        
+
+
+
                     </div>
                 </div>
             </form>

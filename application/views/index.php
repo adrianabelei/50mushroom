@@ -86,7 +86,7 @@ $(document).ready(function () {
             
             <ul class="nav">
             <li class="dropdown active">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="index">Home <b class="caret"></b></a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="homepage">Home <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="index.htm">Full Page</a></li>
                     <li><a href="index-gallery.htm">Gallery Only</a></li>

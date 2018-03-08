@@ -87,5 +87,6 @@ $route['companytwq']='Adminprocess/company';
 $route['managepost']='Adminprocess/managepost';
 $route['superadmin']='Adminprocess/superaccess';
 $route['contact']='Companyprocess/contact';
+$route['email']='CompanyProcess/email';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

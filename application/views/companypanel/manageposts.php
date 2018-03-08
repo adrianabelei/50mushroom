@@ -26,7 +26,13 @@
 
 
 <body>
-  
+<div style="color:red">
+<?php if(isset($error_post)){
+            echo $error_post;
+           
+        }
+         ?>
+         </div>
  <hr />
                 <div class="row">
                     <div class="col-lg-12 ">
@@ -38,7 +44,7 @@
  <form action="/addpost" method="POST" enctype="multipart/form-data">
   <div class="form-group">
     <label for="exampleTextarea">Post</label>
-    <textarea name = "title" class="form-control" id="exampleTextarea" rows="1" placeholder="Title"></textarea><br>
+    <textarea name ="title" class="form-control" id="exampleTextarea" rows="1" placeholder="Title"></textarea><br>
 
     <textarea name ="description" class="form-control" id="exampleTextarea" rows="4" placeholder="Description"></textarea><br>
     <div class="form-group row">

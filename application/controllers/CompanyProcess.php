@@ -28,7 +28,7 @@ public function logout()
 
     public function contact()
     {
-        $this->load->view("companypanel/indexcompany");
+        $this->load->view("page-contact");
     }
         
     
@@ -143,20 +143,11 @@ $this->load->view('joinpage');
         var_dump($result);
     } 
 
-
-
-
-    
-    ///////////////// END OF THE CLASS////////////////////////
-
- 
- 
-    ////////////// Login /////////////////
     
 
 
 
-    ///////////////// END OF THE CLASS////////////////////////
+   
 
  function company()
 {
@@ -167,34 +158,52 @@ $this->load->view('joinpage');
 
 function addpost()
     {
+
         $postform = $this->input->post(null, true);
+        $this->load->library("form_validation");
+        $this->form_validation->set_rules("title", "TITLE", "trim|required|alpha|max_length[225]");
+        $this->form_validation->set_rules("description", "Description", "trim|required|max_length[500]");
+        // $this->form_validation->set_rules("image", "image", "trim|required");
+        $this->form_validation->set_rules("link", "Link", "trim|required");
+        $this->form_validation->set_rules("tag", "Tags", "required");
+        $this->form_validation->set_rules("fiiled_position", "Fiiled Position", "required");
         
+        if ($this->form_validation->run() == FALSE)
+        {
+        $validationError = validation_errors();
+        $this->load->view('companypanel/manageposts', array('error_post' => $validationError));
+        }
+        
+        else 
+        {
         $image=$_FILES['image']['name'];
         $this->load->model('company_Model');
         $this->company_Model->addPost($postform,$image);
         $config['upload_path']= 'uploads/';
         $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size'] = '8';
+
         $this->load->library('upload', $config);
+
         if ( ! $this->upload->do_upload('image'))
+        {
+         $data=0;               
+        }
 
-                {
-                    $data=0;
-                        
-                }
-                else
-                {
-                        $data = array('upload_data' => $this->upload->data());
-
-                }
-       
-        $this->load->view('companypanel/manageposts');
-        
+        else
+        {
+         $data = array('upload_data' => $this->upload->data());
+        }
+       $this->load->view('companypanel/manageposts');
+    }   
     }
+
 
     public function manage()
     {
         $this->load->view('companypanel/manageposts');
     }
+    
 
     function detailpost($id)
     {
@@ -294,12 +303,41 @@ public function editonecompany()
 
     }
 
+    public function email()
+    {
+$email=$this->input->post(null, true);
 
- 
+
+$config['protocol'] = 'sendmail';
+$config['mailpath'] = '/usr/sbin/sendmail';
+$config['charset'] = 'iso-8859-1';
+$config['wordwrap'] = TRUE;
+
+$this->email->initialize($config);
+
+$this->load->library('email');
+
+$this->email->from('aboudmourad@hotmail.com', 'abboud');
+$this->email->to('aboudmourad88@gmail.com');
+$this->email->cc('aboudmourad@hotmail.com');
+$this->email->bcc('them@their-example.com');
+
+$this->email->subject('Email Test');
+$this->email->message('message');
+$this->email->set_newline("\r\n");
+$this->email->print_debugger();
+if($this->email->send())
+{
+   
 }
+else 
+{
+    
+}
+$this->load->view("page-contact");
+    }
 
-
-
-
-
+    
+  ///////////////// END OF THE CLASS////////////////////////
+}
 ?>
