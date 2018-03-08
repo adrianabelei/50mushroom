@@ -142,10 +142,24 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
     </div>
     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
-                           <a href="seeAdmin" >
+                           <a href="" >
 
                     <i class="fa fa-circle-o-notch fa-5x"></i>
                       <h4>Undecided Companies</h4>
+
+                   
+                      </a>
+                      </div>
+
+                         
+    </div>
+
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                      <div class="div-square">
+                           <a href="superadminaccess.php" >
+
+                    <i class="fa fa-circle-o-notch fa-5x"></i>
+                      <h4>Superadmin access</h4>
 
                    
                       </a>

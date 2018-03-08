@@ -83,12 +83,16 @@ $route['seeUser']='AdminProcess/seeUser';
 $route['seeAdmin']='AdminProcess/seeAdmin';
 $route['admineditpage']='Adminprocess/admineditpage';
 $route['editoneadmin']='Adminprocess/editoneadmin';
+$route['detailsadmins/(:any)'] = 'AdminProcess/detailsadmins/$1';
 
 
 $route['editonecompany1']='AdminProcess/editonecompany1';
 $route['editpost1']='AdminProcess/editpost1';
 $route['login_admin'] = 'AdminProcess/login';
 $route['editCompany/(:any)'] = 'AdminProcess/editCompany/$1';
+<<<<<<< HEAD
+$route['adminEdit/(:any)'] = 'AdminProcess/adminEdit/$1';
+=======
 $route['deleteCompany/(:any)'] = 'AdminProcess/deleteCompany/$1';
 $route['deleteCompany1/(:any)'] = 'AdminProcess/deleteCompany1/$1';
 $route['makehighlight/(:any)'] = 'AdminProcess/makehighlight/$1';
@@ -99,6 +103,7 @@ $route['maketursted/(:any)'] = 'AdminProcess/maketursted/$1';
 $route['seeacceptedpost'] = 'AdminProcess/seeacceptedpost';
 $route['detailpostcompany1/(:any)'] = 'AdminProcess/detailpostcompany1/$1';
 $route['seeUnacppepted'] = 'AdminProcess/seeUnacppepted';
+>>>>>>> c899abbbf1ea7857925ce49ccf71b2bd8ad9a3ee
 $route['logout'] = 'AdminProcess/logout';
 $route['detailsCompany/(:any)'] = 'AdminProcess/detailsCompany/$1';
 $route['panel'] = 'Adminprocess/bringadminpanel';

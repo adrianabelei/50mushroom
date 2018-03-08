@@ -23,6 +23,7 @@
                     <div class="col-lg-12 ">
                         <div class="alert alert-warning">
                              <strong>Welcome USER  </strong> 
+                             <a href="/index" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
                         </div>
                     
 <br><br>
@@ -52,11 +53,11 @@
                     ?>
                     <tr>
                          
-                        <td ><?=$item['first_name'] ?></td>
-                        <td><?=$item['last_name'] ?></td>
-                        <td><?=$item['email'] ?></td>
-                        <td><?=$item['password'] ?></td>
-                        <td > <span class="project-details"><a href="detailsCompany/<?= $item['id'] ?>">Click_me</span></td>
+                        <td ><?=$item['first_name'] ?></td><br>
+                        <td><?=$item['last_name'] ?></td><br>
+                        <td><?=$item['email'] ?></td><br>
+                        <td><?=$item['password'] ?></td><br><br>
+                        <td > <span class="project-details"><a href="detailsadmins/<?= $item['id'] ?>">Click_me</span></td>
                         </tr>   
                     <?php } ?>
                    </tbody>

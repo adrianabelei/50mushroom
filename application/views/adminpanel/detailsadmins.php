@@ -30,7 +30,6 @@
 
 <br>
 <br>
-<form action="/editoneadmin" method="post">
 
    <table class="table table-striped table-hover table-users">
                 
@@ -39,11 +38,15 @@
                    <thead>
                     <tr>
                         
-                    <th class="hidden-phone">Last Name</th>
-                        <th class="hidden-phone">Last Name</th>
-                        <th class="hidden-phone">Email</th>
-                        <th class="hidden-phone">Password</th>
+                        <th class="hidden-phone">First Name<?= $results['first_name'] ?></th><br>
+                        <th class="hidden-phone">Last Name<?= $results['last_name'] ?></th><br>
+                        <th class="hidden-phone">Email<?= $results['email'] ?></th><br>
+                        <th class="hidden-phone">Password<?= $results['password'] ?></th><br>
+
                         <th></th>
                     </tr>
                 </thead>
-</form>
+
+                <a class="btn btn-inverse pull-left" type="submit" href="adminEdit/<?= $results['id'] ?>">Edit</button>
+                    
+                    <a href="/seeAdmin" class="pull-right"><i class="icon-arrow-left"></i>Back</a>

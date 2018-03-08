@@ -110,9 +110,9 @@ public function maketursted($id)
         return $this->db->query($myquery, $values);
     }
 
-    public function companiesOneRead($id)
+    public function adminsOneRead($id)
     {
-        $myquery = "SELECT * FROM companies WHERE id=? ";
+        $myquery = "SELECT * FROM admins WHERE id=? ";
         $values = array("$id");
         return $this->db->query($myquery, $values)->row_array();
     }
