@@ -18,7 +18,9 @@ class Company_Model extends CI_Model
  
     public function get_user_by_email($email)
     {
-        return $this->db->query("SELECT * FROM companies WHERE email = ?", array($email))->row_array();
+        $query = "SELECT * from companies where email=?";
+        $value=[$email];
+        return $this->db->query($query,$value)->row_array();
     }
 
 
@@ -47,6 +49,15 @@ class Company_Model extends CI_Model
     {
         $myquery = "UPDATE posts SET title =?, description=?, link=?, image=?, tag=?,fiiled_position=?,is_decided=?   WHERE id=?";
         $values = array($result['title'],$result['description'],$result['link'],$image,$result['tag'],$result['fiiled_position'],0,$id);
+        return $this->db->query($myquery, $values);
+
+      
+    }
+
+    public function editone1($result,$id,$image)
+    {
+        $myquery = "UPDATE posts SET title =?, description=?, link=?, image=?, tag=?,fiiled_position=?,is_decided=?   WHERE id=?";
+        $values = array($result['title'],$result['description'],$result['link'],$image,$result['tag'],$result['fiiled_position'],1,$id);
         return $this->db->query($myquery, $values);
 
       
