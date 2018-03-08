@@ -33,7 +33,7 @@
                     </div>
 
                     <span class="logout-spn" >
-                        <a href="logout" style="color:#fff;">LOGOUT</a>  
+                        <a href="logout2" style="color:#fff;">LOGOUT</a>  
 
                     </span>
                 </div>

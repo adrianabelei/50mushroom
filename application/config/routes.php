@@ -59,7 +59,7 @@ $route['manage']='Companyprocess/manage';
 $route['addpost']='Companyprocess/addpost';
 $route['seeposts']='Companyprocess/seeposts';
 $route['editonepost/(:any)']='Companyprocess/editonepost/$1';
-$route['logout']='Companyprocess/logout';
+$route['logout2']='Companyprocess/logout';
 $route['editpost']='Companyprocess/editpost';
 $route['companydetail']='Companyprocess/companydetail';
 $route['companyeditpage']='Companyprocess/companyeditpage';
@@ -67,11 +67,15 @@ $route['editonecompany']='Companyprocess/editonecompany';
 
 $route['detailpost/(:any)'] = 'Companyprocess/detailpost/$1';
 $route['detailpostcompany/(:any)'] = 'Companyprocess/detailpostcompany/$1';
+$route['acceptposts/(:any)'] = 'AdminProcess/acceptposts/$1';
+
+
 $route['login'] = 'CompanyProcess/login';
+$route['seeunacceptedposts'] = 'AdminProcess/seeunacceptedposts';
 $route['show'] = 'Companyprocess/readpost';
 $route['adminwsq'] = 'AdminProcess/index';
 $route['index'] = 'AdminProcess/login';
-
+$route['editonepost1/(:any)']='AdminProcess/editonepost1/$1';
 $route['seeUser']='AdminProcess/seeUser';
 $route['seeAdmin']='AdminProcess/seeAdmin';
 $route['admineditpage']='Adminprocess/admineditpage';
@@ -79,13 +83,18 @@ $route['editoneadmin']='Adminprocess/editoneadmin';
 
 
 $route['editonecompany1']='AdminProcess/editonecompany1';
+$route['editpost1']='AdminProcess/editpost1';
 $route['login_admin'] = 'AdminProcess/login';
 $route['editCompany/(:any)'] = 'AdminProcess/editCompany/$1';
 $route['deleteCompany/(:any)'] = 'AdminProcess/deleteCompany/$1';
 $route['deleteCompany1/(:any)'] = 'AdminProcess/deleteCompany1/$1';
+$route['makehighlight/(:any)'] = 'AdminProcess/makehighlight/$1';
+
+
 $route['acceptCompany/(:any)'] = 'AdminProcess/acceptCompany/$1';
 $route['maketursted/(:any)'] = 'AdminProcess/maketursted/$1';
-
+$route['seeacceptedpost'] = 'AdminProcess/seeacceptedpost';
+$route['detailpostcompany1/(:any)'] = 'AdminProcess/detailpostcompany1/$1';
 $route['seeUnacppepted'] = 'AdminProcess/seeUnacppepted';
 $route['logout'] = 'AdminProcess/logout';
 $route['detailsCompany/(:any)'] = 'AdminProcess/detailsCompany/$1';

@@ -16,14 +16,14 @@ class CompanyProcess extends CI_Controller
       
          $this->load->model('Company_Model');
          $result['results']=$this->Company_Model->postsread();
-          $this->load->view("index",$result);
+         $this->load->view("index",$result);
     }
 
 
 public function logout()
 {
     session_destroy();
-    $this->login;
+    redirect("http://localhost");
 }
 
     public function contact()
@@ -54,7 +54,6 @@ $this->load->view('joinpage');
    {
         $this->load->model('Company_Model');
          $result['results']=$this->Company_Model->companydetail();
-         var_dump($result);
           $this->load->view("companypanel/companydetail",$result);
        
    }
@@ -112,12 +111,32 @@ $this->load->view('joinpage');
     ////////////// Login /////////////////
     public function login()
    {
-       $email_login = $this->input->post('email', true);
-       $password_login = $this->input->post('password', true);
+
+    
+    if($this->session->userdata('company_id'))
+
+    {
+        $this->load->view('companypanel/indexcompany');
+
+    }    
+    
+    else{
+
+        
+
+
+       $result =$this->input->post(null, false);
+       $email_login=$result['email'];
+       $password_login=$result['password'];
+    
+
+
        $this->load->model('company_Model');
        $user = $this->company_Model->get_user_by_email($email_login);
+       var_dump($user);
+       $this->session->set_userdata('company_id',$user['id']);
        $encrypted_password = sha1($password_login . '' . $user['salt_data']);
-       if ($user && $user['password'] == $encrypted_password) {
+       if ($user && ($user['password'] == $encrypted_password)) {
            $user1 = array(
                'id' => $user['id'],
                'email' => $user['email'],
@@ -125,13 +144,16 @@ $this->load->view('joinpage');
                
            );
            $this->session->set_userdata($user1);
-           $this->session->set_userdata('company_id',$user1['id']);
-           $this->load->view('companypanel/indexcompany', $user1);
+           
+           
+
+           
 
        } else {
            $error['logerror'] = "Wrong password or email";
-           $this->load->view('companypanel/indexcompany', $error);
+           $this->load->view('joinpage', $error);
        }
+    }
    }
 
 
@@ -140,7 +162,7 @@ $this->load->view('joinpage');
     {
         $this->load->model('company_Model');
         $result=$this->company_Model->postsread();
-        var_dump($result);
+        
     } 
 
 
@@ -241,7 +263,9 @@ function addpost()
     }
 
 public function editonecompany()
-{       $result=$this->input->post(null,false);
+{      
+    
+        $result=$this->input->post(null,false);
         $image=$_FILES['image']['name'];
         $id=$this->session->userdata('company_id');
         $this->load->model("Company_Model");
