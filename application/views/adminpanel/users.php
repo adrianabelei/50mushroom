@@ -111,7 +111,6 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
                       <h4>See Posts</h4>
 
                       </a>
-
                       </div>
 </div>
                      
@@ -133,7 +132,7 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
                            <a href=" " >
 
                     <i class="fa fa-circle-o-notch fa-5x"></i>
-                      <h4>Rejected Posts</h4>
+                      <h4>Undecided Companies</h4>
 
                    
                       </a>
