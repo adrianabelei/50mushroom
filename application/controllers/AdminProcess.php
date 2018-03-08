@@ -108,8 +108,29 @@ public function editCompany(Type $var = null)
 
 
 
+public function seeAdmin()
+{
+$this->load->model("Admin_Model");
+    $result['results']=$this->Admin_Model->readAdmin();
+    $this->load->view("adminpanel/seeAdmin",$result);
+}
+
+function admineditpage(){
+        
+    $this->load->view('adminpanel/adminedit');
 
 
 }
 
+public function editoneadmin()
+
+{       $result=$this->input->post(null,false);
+        $id=$this->session->userdata('superadmin_id');
+        $this->load->model("Admin_Model");
+        $result2=$this->Company_Model->editoneadmin($result,$id);
+        $this->load->view('adminpanel/seeAdmin');
+}
+
+
+}
 ?>
