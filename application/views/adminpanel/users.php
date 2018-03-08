@@ -140,33 +140,64 @@ if(null !==($this->session->userdata('id_superAdmin')) && null !==($this->sessio
 
                          
     </div>
-    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+
+            <?php 
+            
+            if($this->session->userdata('id_superAdmin'))
+            {
+            ?>
+
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
-                           <a href="" >
+                           <a href="SeeAdmins" >
 
                     <i class="fa fa-circle-o-notch fa-5x"></i>
-                      <h4>Undecided Companies</h4>
+                      <h4>See Admins</h4>
 
                    
                       </a>
                       </div>
 
                          
-    </div>
+             </div>
 
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
-                      <div class="div-square">
-                           <a href="superadminaccess.php" >
-
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                    <div class="div-square">
+                    <a href="superadminaccess.php" >
                     <i class="fa fa-circle-o-notch fa-5x"></i>
-                      <h4>Superadmin access</h4>
-
-                   
+                    <h4>Ad Admin</h4>
                       </a>
-                      </div>
+                      </div>                
+                        </div>
 
-                         
-    </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                    <div class="div-square">
+                    <a href="superadminaccess.php" >
+                    <i class="fa fa-circle-o-notch fa-5x"></i>
+                    <h4>Ad SuperAdmin</h4>
+                      </a>
+                      </div>                
+                        </div>
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                    <div class="div-square">
+                    <a href="superadminaccess.php" >
+                    <i class="fa fa-circle-o-notch fa-5x"></i>
+                    <h4>See SuperAdmins</h4>
+                      </a>
+                      </div>                
+                        </div>
+
+            <?php } else{
+
+
+
+            }  
+            
+            
+            ?>
+
+
+
 
                       </div>                         
     </div>

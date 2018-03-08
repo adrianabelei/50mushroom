@@ -96,8 +96,16 @@ $route['deleteCompany/(:any)'] = 'AdminProcess/deleteCompany/$1';
 $route['deleteCompany1/(:any)'] = 'AdminProcess/deleteCompany1/$1';
 $route['makehighlight/(:any)'] = 'AdminProcess/makehighlight/$1';
 
-
+$route['SeeAdmins'] = 'AdminProcess/SeeAdmins';
+$route['editadmin1'] = 'AdminProcess/editadmin1';
+$route['editAdmin/(:any)'] = 'AdminProcess/editadmin/$1';
 $route['acceptCompany/(:any)'] = 'AdminProcess/acceptCompany/$1';
+$route['deleteAdmin/(:any)'] = 'AdminProcess/deleteAdmin/$1';
+$route['detailsAdmin/(:any)'] = 'AdminProcess/detailsAdmin/$1';
+
+
+
+
 $route['maketursted/(:any)'] = 'AdminProcess/maketursted/$1';
 $route['seeacceptedpost'] = 'AdminProcess/seeacceptedpost';
 $route['detailpostcompany1/(:any)'] = 'AdminProcess/detailpostcompany1/$1';

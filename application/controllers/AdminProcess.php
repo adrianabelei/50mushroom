@@ -90,6 +90,29 @@ public function seeUser()
     $this->load->view("adminpanel/seeCompanies",$result);
 }
 
+public function SeeAdmins()
+{
+    $this->load->model("Admin_Model");
+    $result['results']=$this->Admin_Model->SeeAdmins();
+    $this->load->view("adminpanel/seeAdmins",$result);
+    
+}
+
+public function deleteAdmin($id)
+{
+    $this->load->model("Admin_Model");
+    $result2=$this->Admin_Model->deleteoneAdmin($id);
+    redirect('http://localhost/SeeAdmins');
+}
+
+
+public function detailsAdmin($id)
+{
+    $this->load->model("Admin_Model");
+    $result['results']=$this->Admin_Model->adminsOneRead($id);
+    $this->load->view("adminpanel/admindetail",$result);
+}
+
 
 public function detailsCompany($id)
 {   
@@ -102,6 +125,22 @@ public function detailsCompany($id)
 }
 
 
+public function editadmin1()
+{
+    $result=$this->input->post(null,false);
+        $id=$this->session->userdata('company_updated_id');
+        $this->load->model("Admin_Model");
+        $result2=$this->Admin_Model->editoneadmin($result,$id);
+        $this->load->view('adminpanel/users');
+}
+
+public function editadmin($id)
+{
+    $this->session->set_userdata('company_updated_id', $id);
+    $this->load->view("adminpanel/adminedit");
+}
+
+
     
 
 
@@ -109,9 +148,10 @@ public function editCompany($id)
 {
     $this->session->set_userdata('company_updated_id', $id);
     $this->load->view("adminpanel/editCompany");
-
-
 }
+
+
+
 
 public function editonecompany1()
 {

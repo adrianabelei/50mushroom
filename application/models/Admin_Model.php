@@ -92,6 +92,20 @@ public function maketursted($id)
         return $this->db->query($myquery, $values);
     }
 
+public function SeeAdmins()
+{
+            $query = "SELECT * from admins ";
+            return $this->db->query($query)->result_array();
+}
+
+public function deleteoneAdmin($id)
+{
+        $myquery = "DELETE FROM admins WHERE id=?;";
+        $values = array($id);
+        return $this->db->query($myquery, $values);
+}
+    
+
 
 
 
@@ -116,6 +130,16 @@ public function maketursted($id)
         $values = array("$id");
         return $this->db->query($myquery, $values)->row_array();
     }
+
+     public function companiesOneRead($id)
+    {
+        $myquery = "SELECT * FROM companies WHERE id=? ";
+        $values = array("$id");
+        return $this->db->query($myquery, $values)->row_array();
+    }
+
+    
+    
 
 
 
