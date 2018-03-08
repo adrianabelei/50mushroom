@@ -92,7 +92,6 @@ $route['login_admin'] = 'AdminProcess/login';
 $route['editCompany/(:any)'] = 'AdminProcess/editCompany/$1';
 
 $route['adminEdit/(:any)'] = 'AdminProcess/adminEdit/$1';
-=======
 $route['deleteCompany/(:any)'] = 'AdminProcess/deleteCompany/$1';
 $route['deleteCompany1/(:any)'] = 'AdminProcess/deleteCompany1/$1';
 $route['makehighlight/(:any)'] = 'AdminProcess/makehighlight/$1';

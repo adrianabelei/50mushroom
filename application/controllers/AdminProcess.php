@@ -254,7 +254,7 @@ public function detailsadmins($id)
     $this->load->model("Admin_Model");
     $result['results']=$this->Admin_Model->adminsOneRead($id);
      $this->load->view("adminpanel/detailsadmins",$result);
-
+}
 
 public function acceptposts($id)
 {
