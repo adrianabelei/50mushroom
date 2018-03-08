@@ -97,14 +97,13 @@ public function detailsCompany($id)
     $this->load->model("Admin_Model");
     $result['results']=$this->Admin_Model->companiesOneRead($id);
     $this->load->view("adminpanel/detailsCompany",$result);
-<<<<<<< HEAD
+
     
 }
 
 
-=======
     
-}
+
 
 public function editCompany($id)
 {
@@ -229,7 +228,7 @@ public function maketursted($id)
     redirect('http://localhost/seeUser');
     
 }
->>>>>>> c899abbbf1ea7857925ce49ccf71b2bd8ad9a3ee
+
 
 public function seeUnacppepted()
 {
@@ -249,13 +248,13 @@ public function seeAdmin()
 
 }
 
-<<<<<<< HEAD
+
 public function detailsadmins($id)
 {
     $this->load->model("Admin_Model");
     $result['results']=$this->Admin_Model->adminsOneRead($id);
      $this->load->view("adminpanel/detailsadmins",$result);
-=======
+
 
 public function acceptposts($id)
 {
@@ -285,7 +284,7 @@ public function seeunacceptedposts()
     $this->load->model("Admin_Model");
     $result['results']=$this->Admin_Model->postsread();
     $this->load->view("adminpanel/unacceptedpost",$result);
->>>>>>> c899abbbf1ea7857925ce49ccf71b2bd8ad9a3ee
+
     
 }
 
