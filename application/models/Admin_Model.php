@@ -29,12 +29,19 @@ class Admin_Model extends CI_Model
         return $this->db->query($query)->result_array();
     }
 
+     public function editonecompany($result,$id,$image)
+    {
+        $myquery = "UPDATE companies SET company_name =?, email=?, company_logo=?, adress=?,phonenumber=?,type=?   WHERE id=?";
+        $values = array($result['company_name'],$result['email'],$image,$result['adress'],$result['phonenumber'],$result['type'],$id);
+        return $this->db->query($myquery, $values);
+    }
+
+
     function readAdmin()
     {
         $query="SELECT * from admins";
         return $this->db->query($query)->result_array();
     }
-
     public function editoneadmin($result,$id)
     {
         $myquery = "UPDATE admins SET first_name =?, last_name =?, email=?, password=?   WHERE id=?";
@@ -42,9 +49,9 @@ class Admin_Model extends CI_Model
         return $this->db->query($myquery, $values);
     }
 
-    public function companiesOneRead($id)
+    public function adminsOneRead($id)
     {
-        $myquery = "SELECT * FROM companies WHERE id=? ";
+        $myquery = "SELECT * FROM admins WHERE id=? ";
         $values = array("$id");
         return $this->db->query($myquery, $values)->row_array();
     }

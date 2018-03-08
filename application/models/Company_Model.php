@@ -55,8 +55,8 @@ class Company_Model extends CI_Model
 
     public function editonecompany($result,$id,$image)
     {
-        $myquery = "UPDATE companies SET company_name =?, email=?, password=?, company_logo=?, adress=?,phonenumber=?,type=?   WHERE id=?";
-        $values = array($result['company_name'],$result['email'],$result['password'],$image,$result['adress'],$result['phonenumber'],$result['type'],$id);
+        $myquery = "UPDATE companies SET company_name =?, email=?, company_logo=?, adress=?,phonenumber=?,type=?   WHERE id=?";
+        $values = array($result['company_name'],$result['email'],$image,$result['adress'],$result['phonenumber'],$result['type'],$id);
         return $this->db->query($myquery, $values);
     }
 

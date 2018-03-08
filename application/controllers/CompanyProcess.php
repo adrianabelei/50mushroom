@@ -269,7 +269,8 @@ public function editonecompany()
 
         $result=$this->input->post(null,false);
         $image=$_FILES['image']['name'];
-        $id=$this->session->userdata('company_updated_id');
+        $id=$this->session->userdata('company_upda
+        ted_id');
         $this->load->model("Company_Model");
         $result2=$this->Company_Model->editone($result,$id,$image);
         

@@ -76,9 +76,12 @@ $route['seeUser']='AdminProcess/seeUser';
 $route['seeAdmin']='AdminProcess/seeAdmin';
 $route['admineditpage']='Adminprocess/admineditpage';
 $route['editoneadmin']='Adminprocess/editoneadmin';
+$route['detailsadmins/(:any)'] = 'AdminProcess/detailsadmins/$1';
 
 
 $route['login_admin'] = 'AdminProcess/login';
+$route['editCompany/(:any)'] = 'AdminProcess/editCompany/$1';
+$route['adminEdit/(:any)'] = 'AdminProcess/adminEdit/$1';
 $route['logout'] = 'AdminProcess/logout';
 $route['detailsCompany/(:any)'] = 'AdminProcess/detailsCompany/$1';
 $route['panel'] = 'Adminprocess/bringadminpanel';
