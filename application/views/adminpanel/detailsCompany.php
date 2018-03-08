@@ -176,7 +176,7 @@
                     </ul>
                     <a class="btn btn-inverse pull-left" type="submit" href="detailsCompany/<?= $results['id'] ?>">Edit</button>
                     
-                    <a href="login" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
+                    <a href="/seeUser" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
                 </div>
             </div>
 

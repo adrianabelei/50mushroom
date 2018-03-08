@@ -23,6 +23,7 @@
                     <div class="col-lg-12 ">
                         <div class="alert alert-warning">
                              <strong>Welcome USER  </strong> 
+                             <a href="/index" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
                         </div>
                     
 <br><br>
@@ -48,7 +49,9 @@
                 <tbody>
                     
                    <?php foreach ($results as $item ) {
-                        # code...
+                                if ($item['isdecided']==1){
+
+                                                    # code...
                     ?>
                     <tr>
                          
@@ -57,7 +60,15 @@
                         <td><?=$item['adress'] ?></td>
                         <td > <span class="project-details"><a href="detailsCompany/<?= $item['id'] ?>">Click_me</span></td>
                         </tr>   
-                    <?php } ?>
+                    <?php
+                                }  
+                    else{
+
+
+                    }
+                }
+                    
+                    ?>
                    </tbody>
 
             </table>

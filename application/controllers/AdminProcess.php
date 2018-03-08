@@ -102,6 +102,8 @@ public function detailsCompany($id)
 
 
 
+
+
 }
 
 ?>

@@ -70,6 +70,8 @@ $route['detailpostcompany/(:any)'] = 'Companyprocess/detailpostcompany/$1';
 $route['login'] = 'CompanyProcess/login';
 $route['show'] = 'Companyprocess/readpost';
 $route['adminwsq'] = 'AdminProcess/index';
+$route['index'] = 'AdminProcess/login';
+
 $route['seeUser']='AdminProcess/seeUser';
 $route['login_admin'] = 'AdminProcess/login';
 $route['logout'] = 'AdminProcess/logout';
