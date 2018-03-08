@@ -250,6 +250,22 @@ public function acceptposts($id)
     redirect('http://localhost/seeunacceptedposts');
 }
 
+public function deletepost1($id)
+{
+    $this->load->model("Admin_Model");
+    $result2=$this->Admin_Model->deletepost1($id);
+    redirect('http://localhost/seeunacceptedposts');
+    
+}
+
+public function detailpostcompany2($id)
+{
+        $this->load->model('Company_Model');
+        $result['results']=$this->Company_Model->postsOneRead($id);
+        $this->load->view('adminpanel/seepostedit',$result);
+}
+
+
 public function seeunacceptedposts()
 {
     $this->load->model("Admin_Model");

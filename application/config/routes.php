@@ -75,6 +75,9 @@ $route['seeunacceptedposts'] = 'AdminProcess/seeunacceptedposts';
 $route['show'] = 'Companyprocess/readpost';
 $route['adminwsq'] = 'AdminProcess/index';
 $route['index'] = 'AdminProcess/login';
+
+$route['detailpostcompany2/(:any)']='AdminProcess/detailpostcompany2/$1';
+$route['deletepost1/(:any)']='AdminProcess/deletepost1/$1';
 $route['editonepost1/(:any)']='AdminProcess/editonepost1/$1';
 $route['seeUser']='AdminProcess/seeUser';
 $route['seeAdmin']='AdminProcess/seeAdmin';

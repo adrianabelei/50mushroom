@@ -85,6 +85,18 @@ public function maketursted($id)
         return $this->db->query($myquery, $values);
     }
 
+      public function deletepost1($id)
+    {
+        $myquery = "DELETE FROM posts WHERE id=?;";
+        $values = array($id);
+        return $this->db->query($myquery, $values);
+    }
+
+
+
+
+    
+
 
     function readAdmin()
     {
