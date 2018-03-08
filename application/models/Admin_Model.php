@@ -30,6 +30,13 @@ class Admin_Model extends CI_Model
         return $this->db->query($query)->result_array();
     }
 
+     public function editonecompany($result,$id,$image)
+    {
+        $myquery = "UPDATE companies SET company_name =?, email=?, company_logo=?, adress=?,phonenumber=?,type=?   WHERE id=?";
+        $values = array($result['company_name'],$result['email'],$image,$result['adress'],$result['phonenumber'],$result['type'],$id);
+        return $this->db->query($myquery, $values);
+    }
+
 
 
     public function companiesOneRead($id)

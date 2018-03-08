@@ -99,6 +99,12 @@ public function detailsCompany($id)
     
 }
 
+public function editCompany(Type $var = null)
+{
+    # code...
+}
+
+
 
 
 
