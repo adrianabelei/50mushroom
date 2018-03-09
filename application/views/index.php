@@ -177,6 +177,8 @@ $(document).ready(function () {
             <div class="flexslider">
               <ul class="slides">
                 <!-- <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider" /></a></li> -->
+                50Mushroomlogo2
+                <li><a href="gallery-single.htm"><img style="width:770px; height:530px;"src="<?php echo base_url(); ?>assets/logo/50Mushroomlogo2.png" alt="slider" /></a></li>
 
                 <li><a href="gallery-single.htm"><img style="width:770px; height:530px;"src="<?php echo base_url(); ?>assets/logo/photo2.jpg" alt="slider" /></a></li>
                 <li><a href="gallery-single.htm"><img style="width:770px; height:530px;" src="<?php echo base_url(); ?>assets/logo/photo1.jpg" alt="slider" /></a></li>
