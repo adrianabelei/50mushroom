@@ -277,13 +277,13 @@ public function acceptCompany($id)
     $this->load->model("Admin_Model");
     $result2=$this->Admin_Model->acceptCompany($id);
 
-     $this->load->library('email');
+    //  $this->load->library('email');
 
-    $this->email->from('vcrotterdam@mail.com', 'TechMasters');
-    $this->email->to("qi.husam@gmail.com");
+    // $this->email->from('vcrotterdam@mail.com', 'TechMasters');
+    // $this->email->to("qi.husam@gmail.com");
 
-    $this->email->subject('Your post at VCR - {TechMasters}');
-    $this->email->message('Your registration  has been approved');
+    // $this->email->subject('Your post at VCR - {TechMasters}');
+    // $this->email->message('Your registration  has been approved');
     
     redirect('http://localhost/seeUnacppepted');
 
