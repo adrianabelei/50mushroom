@@ -208,7 +208,7 @@ $(document).ready(function () {
     	<div class="span12">
             <h5 class="title-bg">Recent Work 
                 <small>That we are most proud of</small>
-                <button class="btn btn-mini btn-inverse hidden-phone" type="button">View Portfolio</button>
+                
             </h5>
     	
         <!-- Gallery Thumbnails
@@ -220,7 +220,7 @@ $(document).ready(function () {
                  <?php 
 
         foreach ($results as $item ) {
-            if($item['is_decided']==1){
+            if($item['is_decided']==1 && $item['is_higligted']!=1){
         ?>
         
                     <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
