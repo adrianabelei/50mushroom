@@ -133,7 +133,6 @@ $this->load->view('joinpage');
 
        $this->load->model('company_Model');
        $user = $this->company_Model->get_user_by_email($email_login);
-       var_dump($user);
        $this->session->set_userdata('company_id',$user['id']);
        $encrypted_password = sha1($password_login . '' . $user['salt_data']);
        if ($user && ($user['password'] == $encrypted_password)) {
