@@ -34,7 +34,7 @@
                         </div>
 
  
- <form action="/editadmin1" method="POST" enctype="multipart/form-data">
+ <form action="/addadmin1" method="POST" enctype="multipart/form-data">
   <div class="form-group">
     <label for="exampleTextarea">First Name</label>
     <textarea name = "first_name" class="form-control" id="exampleTextarea" rows="1" placeholder="First Name"></textarea><br>

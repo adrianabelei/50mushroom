@@ -159,7 +159,7 @@
                     
                         
                     </ul>
-                    <a class="btn btn-inverse pull-left" type="submit" href="/editonepost/<?= $results['id'] ?>">Edit</button>
+                    <a class="btn btn-inverse pull-left" type="submit" href="/companyeditpage/?>">Edit</button>
                     
                     <a href="login" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
                 </div>

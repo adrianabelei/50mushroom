@@ -75,27 +75,46 @@ $route['seeunacceptedposts'] = 'AdminProcess/seeunacceptedposts';
 $route['show'] = 'Companyprocess/readpost';
 $route['adminwsq'] = 'AdminProcess/index';
 $route['index'] = 'AdminProcess/login';
+
+$route['detailpostcompany2/(:any)']='AdminProcess/detailpostcompany2/$1';
+$route['deletepost1/(:any)']='AdminProcess/deletepost1/$1';
 $route['editonepost1/(:any)']='AdminProcess/editonepost1/$1';
 $route['seeUser']='AdminProcess/seeUser';
+$route['addAdmin']='AdminProcess/addAdmin';
+$route['addadmin1']='AdminProcess/addadmin1';
+
+
 $route['seeAdmin']='AdminProcess/seeAdmin';
 $route['admineditpage']='Adminprocess/admineditpage';
 $route['editoneadmin']='Adminprocess/editoneadmin';
+$route['detailsadmins/(:any)'] = 'AdminProcess/detailsadmins/$1';
 
 
 $route['editonecompany1']='AdminProcess/editonecompany1';
 $route['editpost1']='AdminProcess/editpost1';
 $route['login_admin'] = 'AdminProcess/login';
 $route['editCompany/(:any)'] = 'AdminProcess/editCompany/$1';
+
+$route['adminEdit/(:any)'] = 'AdminProcess/adminEdit/$1';
 $route['deleteCompany/(:any)'] = 'AdminProcess/deleteCompany/$1';
 $route['deleteCompany1/(:any)'] = 'AdminProcess/deleteCompany1/$1';
 $route['makehighlight/(:any)'] = 'AdminProcess/makehighlight/$1';
 
-
+$route['SeeAdmins'] = 'AdminProcess/SeeAdmins';
+$route['editadmin1'] = 'AdminProcess/editadmin1';
+$route['editAdmin/(:any)'] = 'AdminProcess/editadmin/$1';
 $route['acceptCompany/(:any)'] = 'AdminProcess/acceptCompany/$1';
+$route['deleteAdmin/(:any)'] = 'AdminProcess/deleteAdmin/$1';
+$route['detailsAdmin/(:any)'] = 'AdminProcess/detailsAdmin/$1';
+
+
+
+
 $route['maketursted/(:any)'] = 'AdminProcess/maketursted/$1';
 $route['seeacceptedpost'] = 'AdminProcess/seeacceptedpost';
 $route['detailpostcompany1/(:any)'] = 'AdminProcess/detailpostcompany1/$1';
 $route['seeUnacppepted'] = 'AdminProcess/seeUnacppepted';
+
 $route['logout'] = 'AdminProcess/logout';
 $route['detailsCompany/(:any)'] = 'AdminProcess/detailsCompany/$1';
 $route['panel'] = 'Adminprocess/bringadminpanel';

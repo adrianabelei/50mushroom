@@ -23,7 +23,6 @@
                     <div class="col-lg-12 ">
                         <div class="alert alert-warning">
                              <strong>Welcome USER  </strong> 
-                             <a href="/index" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
                         </div>
                     
 <br><br>
@@ -31,6 +30,7 @@
 
 <br>
 <br>
+
    <table class="table table-striped table-hover table-users">
                 
                         
@@ -38,28 +38,15 @@
                    <thead>
                     <tr>
                         
-                        <th class="hidden-phone">First Name</th>
-                        <th class="hidden-phone">Last Name</th>
-                        <th class="hidden-phone">Email</th>
-                        <th class="hidden-phone">Password</th>
+                        <th class="hidden-phone">First Name<?= $results['first_name'] ?></th><br>
+                        <th class="hidden-phone">Last Name<?= $results['last_name'] ?></th><br>
+                        <th class="hidden-phone">Email<?= $results['email'] ?></th><br>
+                        <th class="hidden-phone">Password<?= $results['password'] ?></th><br>
+
                         <th></th>
                     </tr>
                 </thead>
 
-                <tbody>
+                <a class="btn btn-inverse pull-left" type="submit" href="adminEdit/<?= $results['id'] ?>">Edit</button>
                     
-                   <?php foreach ($results as $item ) {
-                        # code...
-                    ?>
-                    <tr>
-                         
-                        <td ><?=$item['first_name'] ?></td><br>
-                        <td><?=$item['last_name'] ?></td><br>
-                        <td><?=$item['email'] ?></td><br>
-                        <td><?=$item['password'] ?></td><br><br>
-                        <td > <span class="project-details"><a href="detailsadmins/<?= $item['id'] ?>">Click_me</span></td>
-                        </tr>   
-                    <?php } ?>
-                   </tbody>
-
-            </table>
+                    <a href="/seeAdmin" class="pull-right"><i class="icon-arrow-left"></i>Back</a>

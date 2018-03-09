@@ -85,6 +85,43 @@ public function maketursted($id)
         return $this->db->query($myquery, $values);
     }
 
+      public function deletepost1($id)
+    {
+        $myquery = "DELETE FROM posts WHERE id=?;";
+        $values = array($id);
+        return $this->db->query($myquery, $values);
+    }
+
+public function SeeAdmins()
+{
+            $query = "SELECT * from admins ";
+            return $this->db->query($query)->result_array();
+}
+
+public function deleteoneAdmin($id)
+{
+        $myquery = "DELETE FROM admins WHERE id=?;";
+        $values = array($id);
+        return $this->db->query($myquery, $values);
+}
+
+
+
+public function addadmin1($result)
+{
+    $query ='INSERT INTO admins(first_name,last_name,email, password,superadmin_id)
+         VALUES (?,?,?,?,?)';
+         $id=$this->session->userdata("id_superAdmin");
+         $value=[$result['first_name'], $result['last_name'], $result['password'],$result['email'],$id];
+         $this->db->query($query, $value);
+}
+    
+
+
+
+
+    
+
 
     function readAdmin()
     {
@@ -98,12 +135,22 @@ public function maketursted($id)
         return $this->db->query($myquery, $values);
     }
 
-    public function companiesOneRead($id)
+    public function adminsOneRead($id)
+    {
+        $myquery = "SELECT * FROM admins WHERE id=? ";
+        $values = array("$id");
+        return $this->db->query($myquery, $values)->row_array();
+    }
+
+     public function companiesOneRead($id)
     {
         $myquery = "SELECT * FROM companies WHERE id=? ";
         $values = array("$id");
         return $this->db->query($myquery, $values)->row_array();
     }
+
+    
+    
 
 
 

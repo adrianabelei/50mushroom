@@ -19,7 +19,7 @@
 <hr />
                   
 
-<div class="row">
+<div class="row" style="margin-left:20px;" >
                     <div class="col-lg-12 ">
                         <div class="alert alert-warning">
                              <strong>Welcome USER  </strong> 
@@ -39,27 +39,59 @@
                     <tr>
                         
                         <th class="hidden-phone">First Name</th>
-                        <th class="hidden-phone">Last Name</th>
+                        <th class="hidden-phone">Lastname</th>
                         <th class="hidden-phone">Email</th>
                         <th class="hidden-phone">Password</th>
+                        <<th class="hidden-phone">Delete</th>
+                        <th class="hidden-phone">Details</th>
                         <th></th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    
-                   <?php foreach ($results as $item ) {
-                        # code...
+                   
+                   <?php
+                    if ($results){
+                   foreach ($results as $item ) {
+                  
+
+                                                    # code...
                     ?>
                     <tr>
                          
-                        <td ><?=$item['first_name'] ?></td><br>
-                        <td><?=$item['last_name'] ?></td><br>
-                        <td><?=$item['email'] ?></td><br>
-                        <td><?=$item['password'] ?></td><br><br>
-                        <td > <span class="project-details"><a href="detailsadmins/<?= $item['id'] ?>">Click_me</span></td>
+                        <td ><?=$item['first_name'] ?></td>
+                        <td><?=$item['last_name'] ?></td>
+                        <td><?=$item['email'] ?></td>
+                        <td><?=$item['password'] ?></td>
+                         <td > <span class="project-details"><a href="deleteAdmin/<?= $item['id'] ?>">Delete</span></td>
+                        <td > <span class="project-details"><a href="detailsAdmin/<?= $item['id'] ?>">Click</span></td>
+            
                         </tr>   
-                    <?php } ?>
+                    <?php
+                                 
+                    
+
+
+                    
+                }
+            }
+            else{
+
+
+            }
+                    
+                    ?>
                    </tbody>
 
             </table>
+
+
+
+
+
+
+
+
+
+
+</body>

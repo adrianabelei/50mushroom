@@ -147,32 +147,26 @@
 
             <div class="row">
                 <div class="span6">
-                    <img src="<?php echo base_url(); ?>uploads/<?= $results['image'] ?>" class="align-left thumbnail" alt="image">
+    
                 </div>
-                <div class="span6">
-                    <h2><?= $results['title'] ?></h2>
-                    <p class="lead"><?= $results['description'] ?></p>
+                <div class="span6" style="margin-left:-180px;">
+                    <h2><?= "".$results['first_name']."    ".$results['last_name']."" ?></h2>
+                    <p class="lead"><?= $results['email'] ?></p>
 
                     <ul class="project-info">
-                    <li><h6>Tag:</h6> <?= $results['tag'] ?></li>
-                        <li><h6>Date:</h6><?= $results['created_at'] ?></li>
-                        <li><h6>Filled Position:</h6> <?= $results['fiiled_position'] ?></li>
-                        <li><h6>Filled Position:</h6> <?= $results['link'] ?></li>
-                        <li><h6>vacancies:</h6> <?= $results['vacancies'] ?></li>
+                    <li><h6>password:</h6> <?= $results['password'] ?></li>
                     
                         
                     </ul>
-                    <a class="btn btn-inverse pull-left" type="submit" href="/editonepost1/<?= $results['id'] ?>">Edit</button>
+                    <a class="btn btn-inverse pull-left" type="submit" href="/editAdmin/<?= $results['id'] ?>">Edit</button>
                     
-                    <a href="/index" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
+                    <a href="/seeUser" class="pull-right"><i class="icon-arrow-left"></i>Back</a>
                 </div>
             </div>
 
         </div><!-- End gallery-single-->
 
-    </div>
-    
-    <!-- End container row -->
+    </div><!-- End container row -->
     
     </div> <!-- End Container -->
 

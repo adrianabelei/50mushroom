@@ -220,7 +220,7 @@ $(document).ready(function () {
                  <?php 
 
         foreach ($results as $item ) {
-
+            if($item['is_decided']==1){
         ?>
         
                     <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
@@ -234,7 +234,15 @@ $(document).ready(function () {
                         <span class="project-details"><a href="detailpost/<?= $item['id'] ?>"><?= $item['title'] ?></a><?= $item['description'] ?></span>
                     </li>
 
-        <?php } 
+        <?php }
+        
+        else{
+
+
+        }
+
+
+            }
         
         ?>
 
@@ -256,7 +264,7 @@ $(document).ready(function () {
         ================================================== -->
     	<div class="span6">
 
-            <h5 class="title-bg">From the Blog 
+            <h5 class="title-bg"> 
                 <small>All the latest news</small>
                 <button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
                 <button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
@@ -268,49 +276,38 @@ $(document).ready(function () {
             <div class="carousel-inner">
 
                  <!-- Blog Item 1 -->
+                 <?php 
+                 foreach ($results as $item ) {
+                    if($item['is_higligted']==1)
+                    {
+                 
+                 ?>
                 <div class="active item">
-                    <a href="blog-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
+                    <a href="blog-single.htm"><img src="<?php echo base_url(); ?>uploads/<?= $item['image'] ?>" alt="" class="align-left blog-thumb-preview" /></a>
                     <div class="post-info clearfix">
-                        <h4><a href="blog-single.htm">A subject that is beautiful in itself</a></h4>
+                        <h4><a href="blog-single.htm"><?= $item['title'] ?></a></h4>
                         <ul class="blog-details-preview">
-                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015<li>
-                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#" title="Link">Admin</a><li>
-                            <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#" title="Link">12</a><li>
-                            <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a href="#">illustration</a>
+                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> <?= $item['created_at'] ?><li>
+                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="<?= $item['title'] ?>" title="Link"><?= $item['link'] ?></a><li>
+                            <li><i class="icon-comment"></i><strong>Description:</strong> <a href="#" title="Link"><?= $item['description'] ?></a><li>
+                             <li><i class="icon-calendar"></i><strong>Tag:</strong> <?= $item['tag'] ?><li>
                         </ul>
                     </div>
                     <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus, aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a><p>
                 </div>
+
+                 <?php }
+                 else{
+
+                 } 
+                 
+                }
+                 
+                 ?>
 
                 <!-- Blog Item 2 -->
-                 <div class="item">
-                    <a href="blog-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
-                    <div class="post-info clearfix">
-                        <h4><a href="blog-single.htm">A great artist is always before his time</a></h4>
-                        <ul class="blog-details-preview">
-                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015<li>
-                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#" title="Link">Admin</a><li>
-                            <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#" title="Link">12</a><li>
-                            <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a href="#">illustration</a>
-                        </ul>
-                    </div>
-                    <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus, aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a><p>
-                </div>
-
-                 <!-- Blog Item 3 -->
-                 <div class="item">
-                    <a href="blog-single.htm"><img src="<?php echo base_url(); ?>assets/img/gallery/blog-med-img-1.jpg" alt="" class="align-left blog-thumb-preview" /></a>
-                    <div class="post-info clearfix">
-                        <h4><a href="blog-single.htm">Is art everything to anybody?</a></h4>
-                        <ul class="blog-details-preview">
-                            <li><i class="icon-calendar"></i><strong>Posted on:</strong> Sept 4, 2015<li>
-                            <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="#" title="Link">Admin</a><li>
-                            <li><i class="icon-comment"></i><strong>Comments:</strong> <a href="#" title="Link">12</a><li>
-                            <li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a href="#">illustration</a>
-                        </ul>
-                    </div>
-                    <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus, aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a><p>
-                </div>
+    
+               
                 
             </div>
             </div> 	
@@ -387,11 +384,22 @@ $(document).ready(function () {
                 <div class="span3 footer-col">
                     <h5>Latest Posts</h5>
                      <ul class="post-list">
-                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                        <li><a href="#">Consectetur adipiscing elit est lacus gravida</a></li>
-                        <li><a href="#">Lectus sed orci molestie molestie etiam</a></li>
-                        <li><a href="#">Mattis consectetur adipiscing elit est lacus</a></li>
-                        <li><a href="#">Cras rutrum, massa non blandit convallis est</a></li>
+                        <?php 
+                        foreach ($results as $item ) {
+                            # code...
+                         
+                             if($item['is_decided']==1){
+                        
+                        
+                        ?>
+                        <li><a href="#"><?=$item['title'] ?></a></li>
+                            
+                       
+
+
+                        <?php } } ?>
+
+
                     </ul>
                 </div>
                 <div class="span3 footer-col">

@@ -57,8 +57,8 @@
                         <td><?=$item['created_at'] ?></td>
                         
                          <td > <span class="project-details"><a href="acceptposts/<?= $item['id'] ?>">Click</span></td>
-                         <td > <span class="project-details"><a href="makehighlight/<?= $item['id'] ?>">Click</span></td>
-                        <td > <span class="project-details"><a href="detailpostcompany1/<?= $item['id'] ?>">Click_me</span></td>
+                         <td > <span class="project-details"><a href="deletepost1/<?= $item['id'] ?>">Click</span></td>
+                        <td > <span class="project-details"><a href="detailpostcompany2/<?= $item['id'] ?>">Click_me</span></td>
                         </tr>   
                     <?php  
                     }
