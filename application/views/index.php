@@ -272,31 +272,47 @@ $(document).ready(function () {
 
         <div id="blogCarousel" class="carousel slide ">
 
+
             <!-- Carousel items -->
             <div class="carousel-inner">
-
-                 <!-- Blog Item 1 -->
-                 <?php 
+   <?php 
                  foreach ($results as $item ) {
                     if($item['is_higligted']==1)
                     {
+                        $id=0;
+                     if($id==0) 
+                     {  
                  
                  ?>
+                 <!-- Blog Item 1 -->
+              
                 <div class="active item">
+                       <?php  
+                    }
+
+else {
+                    
+                       ?>
+                       <div class="item">
+<?php }?>
                     <a href="blog-single.htm"><img src="<?php echo base_url(); ?>uploads/<?= $item['image'] ?>" alt="" class="align-left blog-thumb-preview" /></a>
                     <div class="post-info clearfix">
                         <h4><a href="blog-single.htm"><?= $item['title'] ?></a></h4>
                         <ul class="blog-details-preview">
                             <li><i class="icon-calendar"></i><strong>Posted on:</strong> <?= $item['created_at'] ?><li>
                             <li><i class="icon-user"></i><strong>Posted by:</strong> <a href="<?= $item['title'] ?>" title="Link"><?= $item['link'] ?></a><li>
-                            <li><i class="icon-comment"></i><strong>Description:</strong> <a href="#" title="Link"><?= $item['description'] ?></a><li>
                              <li><i class="icon-calendar"></i><strong>Tag:</strong> <?= $item['tag'] ?><li>
                         </ul>
                     </div>
-                    <p class="blog-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Vestibulum lectus tellus, aliquet et iaculis sed, volutpat vel erat. <a href="#">Read more</a><p>
+                 
+
+                    <p class="blog-summary"><?= $item['description'] ?> <a href="#">Read more</a><p>
                 </div>
 
-                 <?php }
+    <?php 
+    
+    $id=$id+1;
+    }
                  else{
 
                  } 
@@ -305,9 +321,9 @@ $(document).ready(function () {
                  
                  ?>
 
+                 
+
                 <!-- Blog Item 2 -->
-    
-               
                 
             </div>
             </div> 	
