@@ -215,6 +215,8 @@ public function seeacceptedpost()
       function editonepost1($id){
        
         $this->session->set_userdata('company_updated_id', $id);
+
+        
         $this->load->view('adminpanel/editpost');
     }
 
