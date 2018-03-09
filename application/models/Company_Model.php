@@ -26,7 +26,7 @@ class Company_Model extends CI_Model
 
     function postsread()
 	{	
-        $query = "SELECT * from posts ";
+        $query = "SELECT * from posts order by created_at desc ";
         return $this->db->query($query)->result_array();
     }
     
@@ -97,8 +97,9 @@ class Company_Model extends CI_Model
 
     public function addPost($arg,$image)
     {
-        $query="INSERT INTO posts (title, description, link, image, tag,fiiled_position , vacancies, companies_id) VALUES (?,?,?,?,?,?,?,?)";
-        $values =[$arg['title'], $arg['description'], $arg['link'],$image, $arg['tag'], $arg['fiiled_position'], $arg['vacancies'], $_SESSION['company_id']];
+        $date=date('Y-m-d G:i:s');
+        $query="INSERT INTO posts (title, description, link, image, tag,fiiled_position , vacancies, companies_id,created_at) VALUES (?,?,?,?,?,?,?,?,?)";
+        $values =[$arg['title'], $arg['description'], $arg['link'],$image, $arg['tag'], $arg['fiiled_position'], $arg['vacancies'], $_SESSION['company_id'],$date];
         $this->db->query($query, $values);
         
     }
