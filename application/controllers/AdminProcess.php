@@ -31,6 +31,8 @@ class AdminProcess extends CI_Controller
     {
         $this->load->view('adminpanel/users');
     }
+
+    
     else {
         $logInfo=$this->input->post(null,true);
 		$this->load->model('Admin_Model');
@@ -75,8 +77,19 @@ class AdminProcess extends CI_Controller
 //////////////////// logout/////////////////////
     public function logout()
     {
-        $this->session->sess_destroy();
+
+        if($this->session->userdata('id_superAdmin'))
+        {
+            $this->session->set_userdata('id_superAdmin',false);
+
+        }
+        else{
+            $this->session->set_userdata('id_admin',false);
+
+        }
+
         $this->load->view('adminpanel/adminlogin');
+        
     }
 
 
