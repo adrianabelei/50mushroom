@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'root',
+	'hostname' => 'eu-cdbr-west-02.cleardb.net',
+	'username' => 'bd179a7ad432c6',
+	'password' => '88207c9c',
 	'database' => 'talentportal2',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
