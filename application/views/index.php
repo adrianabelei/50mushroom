@@ -8,12 +8,12 @@
 <!-- CSS
 ================================================== -->
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap-responsive.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/prettyPhoto.css" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/flexslider.css" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom-styles.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="assets/css/prettyPhoto.css" />
+<link rel="stylesheet" href="assets/css/flexslider.css" />
+<link rel="stylesheet" href="assets/css/custom-styles.css">
+<link rel="stylesheet" href="assets/css/style.css">
 
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
