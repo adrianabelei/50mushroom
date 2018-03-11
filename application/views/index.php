@@ -8,12 +8,12 @@
 <!-- CSS
 ================================================== -->
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap-responsive.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/prettyPhoto.css" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/flexslider.css" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom-styles.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/bootstrap.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/prettyPhoto.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/flexslider.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/custom-styles.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css">
 
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,10 +22,10 @@
 
 <!-- Favicons
 ================================================== -->
-<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/favicon.ico">
-<link rel="apple-touch-icon" href="<?php echo base_url(); ?>assets/img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url(); ?>assets/img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url(); ?>assets/img/apple-touch-icon-114x114.png">
+<link rel="shortcut icon" href="<?php echo base_url(); ?>/assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="<?php echo base_url(); ?>/assets/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url(); ?>/assets/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url(); ?>/assets/img/apple-touch-icon-114x114.png">
 
 <!-- JS
 ================================================== -->
