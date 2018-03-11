@@ -115,7 +115,7 @@ public function deleteAdmin($id)
 {
     $this->load->model("Admin_Model");
     $result2=$this->Admin_Model->deleteoneAdmin($id);
-    redirect('http://localhost/SeeAdmins');
+    redirect('/SeeAdmins');
 }
 
 
@@ -149,7 +149,7 @@ public function addadmin1()
 
       $this->load->model("Admin_Model");
         $this->Admin_Model->addadmin1($result);
-        redirect('http://localhost/addAdmin');
+        redirect('/addAdmin');
 
 
 
@@ -256,7 +256,7 @@ public function seeacceptedpost()
                         
 
                 }
-                redirect("http://localhost/seeacceptedpost");
+                redirect("/seeacceptedpost");
 
         
 
@@ -268,7 +268,7 @@ function deleteCompany($id)
 {  
      $this->load->model("Admin_Model");
     $result2=$this->Admin_Model->deleteonecompany($id);
-    redirect('http://localhost/seeUser');
+    redirect('/seeUser');
 }
 
 
@@ -276,14 +276,14 @@ public function makehighlight($id)
 {
        $this->load->model("Admin_Model");
     $result2=$this->Admin_Model->makehighlight($id);
-    redirect('http://localhost/seeacceptedpost');
+    redirect('/seeacceptedpost');
 }
 
 public function deleteCompany1($id)
 {
     $this->load->model("Admin_Model");
     $result2=$this->Admin_Model->deleteonecompany($id);
-    redirect('http://localhost/seeUnacppepted');
+    redirect('/seeUnacppepted');
 }
 
 
@@ -300,7 +300,7 @@ public function acceptCompany($id)
     // $this->email->subject('Your post at VCR - {TechMasters}');
     // $this->email->message('Your registration  has been approved');
     
-    redirect('http://localhost/seeUnacppepted');
+    redirect('/seeUnacppepted');
 
     
 }
@@ -309,7 +309,7 @@ public function maketursted($id)
 {
     $this->load->model("Admin_Model");
     $result2=$this->Admin_Model->maketursted($id);
-    redirect('http://localhost/seeUser');
+    redirect('/seeUser');
     
 }
 
@@ -344,14 +344,14 @@ public function acceptposts($id)
 {
     $this->load->model("Admin_Model");
     $result2=$this->Admin_Model->acceptposts($id);
-    redirect('http://localhost/seeunacceptedposts');
+    redirect('/seeunacceptedposts');
 }
 
 public function deletepost1($id)
 {
     $this->load->model("Admin_Model");
     $result2=$this->Admin_Model->deletepost1($id);
-    redirect('http://localhost/seeunacceptedposts');
+    redirect('/seeunacceptedposts');
     
 }
 

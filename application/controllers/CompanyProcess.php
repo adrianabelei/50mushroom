@@ -23,7 +23,7 @@ class CompanyProcess extends CI_Controller
 public function logout()
 {
     $this->session->set_userdata('company_id',false);
-    redirect("http://localhost");
+    redirect("/");
 }
 
     public function contact()
