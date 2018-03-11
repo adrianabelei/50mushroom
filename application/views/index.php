@@ -361,11 +361,11 @@ else {
 
             <!-- Client Logo Thumbs-->
             <ul class="client-logos">
-                <li><a href="#" class="client-link"><img src="<?php echo base_url(); ?>assets/img/gallery/client-img-1.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="<?php echo base_url(); ?>assets/img/gallery/client-img-2.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="<?php echo base_url(); ?>assets/img/gallery/client-img-3.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="<?php echo base_url(); ?>assets/img/gallery/client-img-4.png" alt="Client"></a></li>
-                <li><a href="#" class="client-link"><img src="<?php echo base_url(); ?>assets/img/gallery/client-img-5.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="assets/img/gallery/client-img-1.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="assets/img/gallery/client-img-2.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="assets/img/gallery/client-img-3.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="assets/img/gallery/client-img-4.png" alt="Client"></a></li>
+                <li><a href="#" class="client-link"><img src="assets/img/gallery/client-img-5.png" alt="Client"></a></li>
             </ul>
 
         </div>
@@ -421,18 +421,18 @@ else {
                 <div class="span3 footer-col">
                     <h5>Flickr Photos</h5>
                     <ul class="img-feed">
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                        <li><a href="#"><img src="<?php echo base_url(); ?>assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="assets/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
                     </ul>
                 </div>
             </div>
