@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTROL PANEL</title>
 	<!-- BOOTSTRAP STYLES-->
-    <link href="<?php echo base_url(); ?>assets/adminpanel/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/adminpanel/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
-    <link href=<?php echo base_url(); ?>"assets/adminpanel/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/adminpanel/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
-    <link href="<?php echo base_url(); ?>assets/adminpanel/css/custom.css" rel="stylesheet" />
+    <link href="assets/adminpanel/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>

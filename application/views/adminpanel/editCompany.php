@@ -6,12 +6,12 @@
     <title>CONTROL PANEL</title>
   <!-- BOOTSTRAP STYLES-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="<?php echo base_url(); ?>assets/adminpanel/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/adminpanel/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
      
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
-    <link href="<?php echo base_url(); ?>assets/adminpanel/css/custom.css" rel="stylesheet" />
+    <link href="assets/adminpanel/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
    <style>

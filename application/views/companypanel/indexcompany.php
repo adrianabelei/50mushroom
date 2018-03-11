@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CONTROL PANEL</title>
         <!-- BOOTSTRAP STYLES-->
-        <link href="<?php echo base_url(); ?>assets/adminpanel/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/adminpanel/css/bootstrap.css" rel="stylesheet" />
         <!-- FONTAWESOME STYLES-->
-        <link href="<?php echo base_url(); ?>assets/adminpanel/css/font-awesome.css" rel="stylesheet" />
+        <link href="assets/adminpanel/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
-        <link href="<?php echo base_url(); ?>assets/adminpanel/css/custom.css" rel="stylesheet" />
+        <link href="assets/adminpanel/css/custom.css" rel="stylesheet" />
         <!-- GOOGLE FONTS-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     </head>
@@ -135,11 +135,11 @@
                             <!-- /. WRAPPER  -->
                             <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
                             <!-- JQUERY SCRIPTS -->
-                            <script src="<?php echo base_url(); ?>assets/adminpanel/js/jquery-1.10.2.js"></script>
+                            <script src="assets/adminpanel/js/jquery-1.10.2.js"></script>
                             <!-- BOOTSTRAP SCRIPTS -->
-                            <script src="<?php echo base_url(); ?>assets/adminpanel/js/bootstrap.min.js"></script>
+                            <script src="assets/adminpanel/js/bootstrap.min.js"></script>
                             <!-- CUSTOM SCRIPTS -->
-                            <script src="<?php echo base_url(); ?>assets/adminpanel/js/custom.js"></script>
+                            <script src="assets/adminpanel/js/custom.js"></script>
 
 
                             </body>

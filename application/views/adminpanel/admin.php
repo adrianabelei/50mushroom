@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin panel</title>
 	<!-- BOOTSTRAP STYLES-->
-    <link href=" <?php echo base_url(); ?>assets/adminpanel/css/bootstrap.css" rel="stylesheet" />
+    <link href=" assets/adminpanel/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
-    <link href=" <?php echo base_url(); ?>assets/css/font-awesome.css" rel="stylesheet" />
+    <link href=" assets/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
     <link href="assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->

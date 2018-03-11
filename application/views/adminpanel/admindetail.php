@@ -28,11 +28,11 @@
 <!-- JS
 ================================================== -->
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.easing.1.3.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/bootstrap.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.prettyPhoto.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.quicksand.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.custom.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/jquery.prettyPhoto.js"></script>
+<script src="assets/js/jquery.quicksand.js"></script>
+<script src="assets/js/jquery.custom.js"></script>
 
 </head>
 

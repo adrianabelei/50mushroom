@@ -9,11 +9,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CONTROL PANEL</title>
         <!-- BOOTSTRAP STYLES-->
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/adminpanel/css/bootstrap.css"/>
+        <link rel="stylesheet" href="assets/adminpanel/css/bootstrap.css"/>
         <!-- FONTAWESOME STYLES-->
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/adminpanel/css/font-awesome.css" />
+        <link rel="stylesheet" href="assets/adminpanel/css/font-awesome.css" />
         <!-- CUSTOM STYLES-->
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/adminpanel/css/custom.css"/>
+        <link rel="stylesheet" href="assets/adminpanel/css/custom.css"/>
         <!-- GOOGLE FONTS-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
         

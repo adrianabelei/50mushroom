@@ -20,19 +20,19 @@
 
 <!-- Favicons
 ================================================== -->
-<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/favicon.ico">
-<link rel="apple-touch-icon" href="<?php echo base_url(); ?>assets/img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url(); ?>assets/img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url(); ?>assets/img/apple-touch-icon-114x114.png">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
 
 <!-- JS
 ================================================== -->
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.easing.1.3.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/bootstrap.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.prettyPhoto.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.quicksand.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.custom.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/jquery.prettyPhoto.js"></script>
+<script src="assets/js/jquery.quicksand.js"></script>
+<script src="assets/js/jquery.custom.js"></script>
 
 </head>
 
@@ -147,7 +147,7 @@
 
             <div class="row">
                 <div class="span6">
-                    <img src="<?php echo base_url(); ?>uploads/<?= $results['image'] ?>" class="align-left thumbnail" alt="image">
+                    <img src="uploads/<?= $results['image'] ?>" class="align-left thumbnail" alt="image">
                 </div>
                 <div class="span6">
                     <h2><?= $results['title'] ?></h2>

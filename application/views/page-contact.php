@@ -8,10 +8,10 @@
 <!-- CSS
 ================================================== -->
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap-responsive.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery.lightbox-0.5.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom-styles.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/bootstrap-responsive.css">
+<link rel="stylesheet" href="assets/css/jquery.lightbox-0.5.css">
+<link rel="stylesheet" href="assets/css/custom-styles.css">
 
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,8 +28,8 @@
 <!-- JS
 ================================================== -->
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/bootstrap.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.custom.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/jquery.custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/js/jquery.prettyPhoto.min.js"></script>
 
 
@@ -47,7 +47,7 @@
         <!-- Logo
         ================================================== -->
         <div class="span5 logo">
-        	<a href="index.htm"><img src="<?php echo base_url(); ?>assets/logo/venture_logo.png" alt="Venture cafe logo" width="280px" /></a>
+        	<a href="index.htm"><img src="assets/logo/venture_logo.png" alt="Venture cafe logo" width="280px" /></a>
             <h5>Big Things... Small Packages</h5>
         </div>
         
@@ -286,7 +286,7 @@
     <!-- Scroll to Top -->  
     <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
     
-    <script src="<?php echo base_url(); ?>assets/js/map.js"></script>
+    <script src="assets/js/map.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLqmMp-hHlW5Qj94DGHpekylGEA1qK_II&callback=initMap">
     </script>
