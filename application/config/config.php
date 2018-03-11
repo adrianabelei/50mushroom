@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
+$config['sess_save_path'] = NULL;
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
