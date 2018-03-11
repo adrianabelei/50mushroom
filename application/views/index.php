@@ -22,18 +22,18 @@
 
 <!-- Favicons
 ================================================== -->
-<link rel="shortcut icon" href="<?php echo base_url(); ?>/assets/img/favicon.ico">
-<link rel="apple-touch-icon" href="<?php echo base_url(); ?>/assets/img/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url(); ?>/assets/img/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url(); ?>/assets/img/apple-touch-icon-114x114.png">
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
 
 <!-- JS
 ================================================== -->
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/bootstrap.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.prettyPhoto.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.flexslider.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.custom.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/jquery.prettyPhoto.js"></script>
+<script src="assets/js/jquery.flexslider.js"></script>
+<script src="assets/js/jquery.custom.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
     $("#btn-blog-next").click(function () {
@@ -75,7 +75,7 @@ $(document).ready(function () {
         <!-- Logo
         ================================================== -->
         <div class="span5 logo">
-        	<a href="index.htm"><img src="<?php echo base_url(); ?>assets/logo/venture_logo.png" alt="Venture cafe logo" width="280px"/></a>
+        	<a href="index.htm"><img src="assets/logo/venture_logo.png" alt="Venture cafe logo" width="280px"/></a>
             <h5>Big Things... Small Packages</h5>
         </div>
         
@@ -226,11 +226,11 @@ $(document).ready(function () {
                     <li  class="span3 gallery-item" data-id="id-1" data-type="illustration">
                         <span class="gallery-hover-4col hidden-phone hidden-tablet">
                             <span class="gallery-icons">
-                                <a href="<?php echo base_url(); ?>uploads/<?= $item['image'] ?>" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
+                                <a href="uploads/<?= $item['image'] ?>" class="item-zoom-link lightbox" title="Custom Illustration" data-rel="prettyPhoto"></a>
                                 <a href="detailpost/<?= $item['id'] ?>" class="item-details-link"></a>
                             </span>
                         </span>
-                        <a href="gallery-single.htm"><img src="<?php echo base_url(); ?>uploads/<?= $item['image'] ?>" alt="Gallery"></a>
+                        <a href="gallery-single.htm"><img src="uploads/<?= $item['image'] ?>" alt="Gallery"></a>
                         <span class="project-details"><a href="detailpost/<?= $item['id'] ?>"><?= $item['title'] ?></a><?= $item['description'] ?></span>
                     </li>
 
