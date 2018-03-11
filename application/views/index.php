@@ -30,10 +30,10 @@
 <!-- JS
 ================================================== -->
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/jquery.prettyPhoto.js"></script>
-<script src="assets/js/jquery.flexslider.js"></script>
-<script src="assets/js/jquery.custom.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+<script src="/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/assets/js/jquery.flexslider.js"></script>
+<script src="/assets/js/jquery.custom.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
     $("#btn-blog-next").click(function () {
