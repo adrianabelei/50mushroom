@@ -1,11 +1,12 @@
 # 50mushroom
 
 
-
-
-Project part of the program at Restart Network
+Job search portal: Project part of the program at Restart Network
 
 Technologies used: 
+
+
+
 PHP
 
 CodeIgniter
